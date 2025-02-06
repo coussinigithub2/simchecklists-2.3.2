@@ -12,7 +12,7 @@ with Help, patches and checklists from:
 - [Swisskommando](https://www.reddit.com/user/Swisskommando/)
 - [RKAW92](https://github.com/rkaw92)
 
-Check the live version of this app @ [checklist.classicgames.com.br](http://checklist.classicgames.com.br)
+Check the live version of this app @ [coussinigithub2.github.io/simchecklists-2.3.2](https://coussinigithub2.github.io/simchecklists-2.3.2/)
 
 ## Status
 ![commit](https://img.shields.io/github/last-commit/jflores82/simchecklists) ![build](https://img.shields.io/github/actions/workflow/status/jflores82/simchecklists/test.yml)
