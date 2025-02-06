@@ -13,7 +13,7 @@ async function include_file() {
 }
 
 async function head_load() {
-	const head_obj = await fetch("inc/_head.html");
+	const head_obj = await fetch("_head.html");
 	let include_head = await head_obj.text();
 	document.head.innerHTML = include_head;
 }
