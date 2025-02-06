@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,13 +9,17 @@
         body { font-family: Arial, sans-serif; background-color: #222; color: white; }
         a { color: lightblue; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .header { color: limegreen; font-size: 1.5em; font-weight: bold; }
-        .section { color: yellow; font-size: 1.2em; margin-top: 10px; }
+        .header { color: limegreen; font-size: 1.5em; font-weight: bold; cursor: pointer; }
+        .section { color: yellow; font-size: 1.2em; margin-top: 10px; cursor: pointer; }
         .item { cursor: pointer; display: flex; }
-        .special { color: purple; font-style: italic; }
+        .special { color: purple; font-style: italic; cursor: pointer; }
         .toggled { color: red !important; }
-        .left { width: 30ch; word-wrap: break-word; }
-        .right { width: 20ch; word-wrap: break-word; }
+        .item div { margin-right: 10px; }
+        .item div:nth-child(1) { width: 30ch; }
+        .item div:nth-child(2) { width: 20ch; }
+        .item.selected { color: red; }
+        .header.selected { color: white !important; }
+        .section.selected { color: white !important; }
     </style>
 </head>
 <body>
@@ -48,30 +53,53 @@
                 if (index === 0) {
                     div.className = "header";
                     div.textContent = line;
+                    div.onclick = () => toggleSelection(div, "header");
                 } else if (line.startsWith("--") && line.endsWith("--")) {
                     div.className = "section";
                     div.textContent = line;
+                    div.onclick = () => toggleSelection(div, "section");
                 } else if (line.startsWith("**")) {
                     div.className = "special";
                     div.textContent = line;
-                } else {
-                    const [left, right] = line.split('=');
+                    div.onclick = () => toggleSelection(div, "special");
+                } else if (line.includes("=")) {
+                    const [left, right] = line.split("=");
+                    const itemDiv = document.createElement("div");
+                    itemDiv.className = "item";
                     const leftDiv = document.createElement("div");
+                    leftDiv.textContent = left.trim();
                     const rightDiv = document.createElement("div");
-
-                    leftDiv.className = "left";
-                    rightDiv.className = "right";
-                    leftDiv.textContent = left;
-                    rightDiv.textContent = right;
-
+                    rightDiv.textContent = right.trim();
+                    itemDiv.appendChild(leftDiv);
+                    itemDiv.appendChild(rightDiv);
+                    itemDiv.onclick = () => itemDiv.classList.toggle("selected");
+                    div.appendChild(itemDiv);
+                } else {
                     div.className = "item";
-                    div.appendChild(leftDiv);
-                    div.appendChild(rightDiv);
-                    div.onclick = () => div.classList.toggle("toggled");
+                    div.textContent = line;
+                    div.onclick = () => div.classList.toggle("selected");
                 }
 
                 contentDiv.appendChild(div);
             });
+        }
+
+        function toggleSelection(element, type) {
+            const allElements = document.querySelectorAll(`.${type}`);
+            allElements.forEach(el => el.classList.remove("selected"));
+            element.classList.add("selected");
+
+            if (type === "header" || type === "section") {
+                const items = document.querySelectorAll(".item");
+                items.forEach(item => {
+                    if (item.classList.contains("selected")) {
+                        item.classList.remove("selected");
+                        item.style.color = 'white';
+                    } else {
+                        item.style.color = 'red';
+                    }
+                });
+            }
         }
 
         const fileUrl = getQueryParam("file");
