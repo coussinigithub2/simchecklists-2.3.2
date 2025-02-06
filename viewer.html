@@ -13,6 +13,8 @@
         .item { cursor: pointer; }
         .special { color: purple; font-style: italic; }
         .toggled { color: red !important; }
+        .item-text { display: inline-block; }
+        .item-value { display: inline-block; margin-left: 20px; }
     </style>
 </head>
 <body>
@@ -40,6 +42,11 @@
             const contentDiv = document.getElementById("file-content");
             contentDiv.innerHTML = ""; 
 
+            const maxLeftLength = Math.max(...lines
+                .filter(line => line.includes("=")) // Only process lines with an equal sign
+                .map(line => line.split("=")[0].length)
+            );
+
             lines.forEach((line, index) => {
                 const div = document.createElement("div");
 
@@ -49,12 +56,22 @@
                     div.className = "section";
                 } else if (line.startsWith("**")) {
                     div.className = "special";
+                } else if (line.includes("=")) {
+                    div.className = "item";
+                    const [key, value] = line.split("=");
+                    const keyText = key.trim();
+                    const valueText = value ? value.trim() : "";
+
+                    // Create the formatted item with dotted alignment
+                    const keyPart = keyText + ".".repeat(maxLeftLength - keyText.length);
+                    const itemText = `<span class="item-text">${keyPart}</span><span class="item-value">${valueText}</span>`;
+                    div.innerHTML = itemText;
+                    div.onclick = () => div.classList.toggle("toggled");
                 } else {
                     div.className = "item";
-                    div.onclick = () => div.classList.toggle("toggled");
+                    div.textContent = line;
                 }
 
-                div.textContent = line;
                 contentDiv.appendChild(div);
             });
         }
