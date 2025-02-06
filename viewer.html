@@ -11,12 +11,10 @@
         .header { color: limegreen; font-size: 1.5em; font-weight: bold; }
         .section { color: yellow; font-size: 1.2em; margin-top: 10px; }
         .item { cursor: pointer; display: flex; }
-        .item div { display: inline-block; }
-        .left { width: 30ch; text-align: left; }
-        .right { width: 20ch; text-align: right; }
         .special { color: purple; font-style: italic; }
         .toggled { color: red !important; }
-        .highlighted { color: red; }
+        .left { width: 30ch; word-wrap: break-word; }
+        .right { width: 20ch; word-wrap: break-word; }
     </style>
 </head>
 <body>
@@ -49,28 +47,27 @@
 
                 if (index === 0) {
                     div.className = "header";
+                    div.textContent = line;
                 } else if (line.startsWith("--") && line.endsWith("--")) {
                     div.className = "section";
+                    div.textContent = line;
                 } else if (line.startsWith("**")) {
                     div.className = "special";
+                    div.textContent = line;
                 } else {
+                    const [left, right] = line.split('=');
+                    const leftDiv = document.createElement("div");
+                    const rightDiv = document.createElement("div");
+
+                    leftDiv.className = "left";
+                    rightDiv.className = "right";
+                    leftDiv.textContent = left;
+                    rightDiv.textContent = right;
+
                     div.className = "item";
-                    div.onclick = () => div.classList.toggle("highlighted");
-                    if (line.includes("=")) {
-                        const [left, right] = line.split("=");
-                        const leftDiv = document.createElement("div");
-                        leftDiv.className = "left";
-                        leftDiv.textContent = left.trim();
-
-                        const rightDiv = document.createElement("div");
-                        rightDiv.className = "right";
-                        rightDiv.textContent = right.trim();
-
-                        div.appendChild(leftDiv);
-                        div.appendChild(rightDiv);
-                    } else {
-                        div.textContent = line;
-                    }
+                    div.appendChild(leftDiv);
+                    div.appendChild(rightDiv);
+                    div.onclick = () => div.classList.toggle("toggled");
                 }
 
                 contentDiv.appendChild(div);
