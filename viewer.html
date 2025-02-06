@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affichage du fichier</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #222; color: white; }
+        .header { color: limegreen; font-size: 1.5em; font-weight: bold; }
+        .section { color: yellow; font-size: 1.2em; margin-top: 10px; }
+        .item { cursor: pointer; }
+        .special { color: purple; font-style: italic; }
+        .toggled { color: red !important; }
+    </style>
+</head>
+<body>
+    <h1>Affichage du fichier</h1>
+    <div id="file-content"></div>
+
+    <script>
+        function getQueryParam(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+
+        async function fetchFileContent(url) {
+            const response = await fetch(url);
+            if (!response.ok) {
+                document.getElementById("file-content").innerHTML = "<p>Impossible de charger le fichier.</p>";
+                return;
+            }
+            const text = await response.text();
+            displayFileContent(text);
+        }
+
+        function displayFileContent(text) {
+            const lines = text.split("\n").map(line => line.trim());
+            const contentDiv = document.getElementById("file-content");
+            contentDiv.innerHTML = ""; 
+
+            lines.forEach((line, index) => {
+                const div = document.createElement("div");
+
+                if (index === 0) {
+                    div.className = "header";
+                } else if (line.startsWith("--") && line.endsWith("--")) {
+                    div.className = "section";
+                } else if (line.startsWith("**")) {
+                    div.className = "special";
+                } else {
+                    div.className = "item";
+                    div.onclick = () => div.classList.toggle("toggled");
+                }
+
+                div.textContent = line;
+                contentDiv.appendChild(div);
+            });
+        }
+
+        const fileUrl = getQueryParam("file");
+        if (fileUrl) {
+            fetchFileContent(fileUrl);
+        } else {
+            document.getElementById("file-content").innerHTML = "<p>Aucun fichier sélectionné.</p>";
+        }
+    </script>
+</body>
+</html>
