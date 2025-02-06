@@ -1,39 +1,41 @@
-<!--
-// SimChecklists - Interactive Checklist for Flight Sims //
-// code @ github.com/jflores82/checklists/ //
--->
-<!doctype html>
-<html lang="en">
-	<head>
-	</head>
-	
-	<body mode="dark">
-		<div class="main-container">
-			<div class="content">
-				<h2><config param="title"></config> - Interactive Checklists:</h2>
-				Choose your aircraft:<br>
-				<div id="checklists"></div>
-			</div>	
-			
-			<div class="spacer"></div>
-			
-			<form action="uploaded.html" method="post" enctype="multipart/form-data">
-				<input type="file" name="file" id="file">
-				<input type="submit" name="submit" value="Send">
-			</form>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des fichiers</title>
+</head>
+<body>
+    <h1>Fichiers dans lists</h1>
+    <ul id="file-list"></ul>
 
-			<div class="mode_switch icon mode_index"><ins icon="dark" class="icon mode_icon" mode="dark"></ins></div>
-			
-			<include file="footer.html"></include>
-		</div>
-	</body>
+    <script>
+        const repo = "coussinigithub2/simchecklist-2.3.2"; // Remplace par ton repo
+        const branch = "main"; // Remplace si nécessaire
+        const dir = "lists"; 
 
-	<script src="js/general.js"></script>
-	<script src="js/checks.js"></script>
-	<script src="js/mode_theme.js"></script>
-	<script>
-		index_load();
-		index_upload_load();
-		mode_load();
-	</script>
+        async function fetchFiles() {
+            const url = `https://api.github.com/repos/${repo}/contents/${dir}?ref=${branch}`;
+            const response = await fetch(url);
+            if (!response.ok) {
+                document.getElementById("file-list").innerHTML = "<li>Impossible de charger les fichiers.</li>";
+                return;
+            }
+            const files = await response.json();
+            const list = document.getElementById("file-list");
+            files.forEach(file => {
+                if (file.type === "file" && file.name.endsWith(".txt")) {
+                    const li = document.createElement("li");
+                    const a = document.createElement("a");
+                    a.href = file.download_url;
+                    a.textContent = file.name;
+                    li.appendChild(a);
+                    list.appendChild(li);
+                }
+            });
+        }
+
+        fetchFiles();
+    </script>
+</body>
 </html>
