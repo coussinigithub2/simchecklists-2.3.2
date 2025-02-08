@@ -1,223 +1,223 @@
-PREPARE A FLIGHT
---RANDOM FLIGHT DATABASE (PC PROGRAM)--
-PROGRAM=OPEN
-RANDOM FLIGHT DATABASE BUTTON=CLICK
-DEPARTURE ICAO (exemple)=CYUL
-**AIRCRAFT TYPE CAN BE A319 A320 A21N (A321 neo) A332 DH8D
-GENERATE FLIGHTS (10)=PRESS
-**NOTE FLIGHT NUMBER
-**KEEP OPEN
---FLIGHT AWARE--
-**SEARCH FOR THIS FLIGHT NUMBER
-**SELECT A FLIGHT (COMPLETED)
-**NOTE ALTITUDE FOR THIS FLIGHT
---RANDOM FLIGHT GENERATOR (PC PROGRAM)--
-**PUT ALTITUDE TO BOTTOM SCREEN
-GENERATE SIMBRIEF=PRESS
---SIMBRIEF--
-**OPEN SIMBRIEF
-**EDIT FLIGHT
-**CHANGE DEPARTURE RUNWAY AND/OR ARRIVAL RUNWAY (for ils landing)
-GENERATE FLIGHT=PRESS
---PRELIMINARY COCKPIT PREPARATION--
-ENG MASTER 1+2=OFF
-ENG MODE SELECTOR=NORM
-L/G LEVER=CHECK DOWN
-WIPERS=OFF
-BAT1+2=CHECK OFF
-BAT1+2 VOLTAGE=CHECK ABOVE 25.5V
-**ONE OR MORE BATTERIES BELOW 25.5
-PARKING BRAKE=SET
-CHOCKS=REMOVED
-GPU=CONNECTED
-THROTTLE=IDLE
-ENGINE MASTERS=OFF
-BATTERIES=ON
-GENERATORS=ON
-EXT POWER=ON
-ADIRS=SET TO NAV
-PANEL DISPLAYS=BRIGHTNESS SET
-NAV LIGHTS=ON
-PANEL LIGHTS=ON AS REQUIRED
-LANDING GEAR LEVER=CHECK DOWN
-FLAPS=UP
-SPOILER=RETRACTED
-FUEL QUANTITY=CHECK
-FASTEN SEAT BELTS=ON
-NO SMOKING SIGNS=ON
-WEATHER (ATIS)=CHECK
-DE-ICE=TEST / CHECK
-REQUEST CLEARANCE=DONE
-TRANSPONDER=SET, STANDBY
-BEACON LIGHTS=ON
-EMERGENCY LIGHTS=ARM
-FMC=SETUP / CHECK
-DEPARTURE BRIEFING=COMPLETE
-DOORS=CLOSED
+Prepare A Flight
+--Random Flight Database (Pc Program)--
+Program=Open
+Random Flight Database Button=Click
+Departure Icao (Exemple)=Cyul
+**Aircraft Type Can Be A319 A320 A21N (A321 Neo) A332 Dh8D
+Generate Flights (10)=Press
+**Note Flight Number
+**Keep Open
+--Flight Aware--
+**Search For This Flight Number
+**Select A Flight (Completed)
+**Note Altitude For This Flight
+--Random Flight Generator (Pc Program)--
+**Put Altitude To Bottom Screen
+Generate Simbrief=Press
+--Simbrief--
+**Open Simbrief
+**Edit Flight
+**Change Departure Runway And/Or Arrival Runway (For Ils Landing)
+Generate Flight=Press
+--Preliminary Cockpit Preparation--
+Eng Master 1+2=Off
+Eng Mode Selector=Norm
+L/G Lever=Check Down
+Wipers=Off
+Bat1+2=Check Off
+Bat1+2 Voltage=Check Above 25.5V
+**One Or More Batteries Below 25.5
+Parking Brake=Set
+Chocks=Removed
+Gpu=Connected
+Throttle=Idle
+Engine Masters=Off
+Batteries=On
+Generators=On
+Ext Power=On
+Adirs=Set To Nav
+Panel Displays=Brightness Set
+Nav Lights=On
+Panel Lights=On As Required
+Landing Gear Lever=Check Down
+Flaps=Up
+Spoiler=Retracted
+Fuel Quantity=Check
+Fasten Seat Belts=On
+No Smoking Signs=On
+Weather (Atis)=Check
+De-Ice=Test / Check
+Request Clearance=Done
+Transponder=Set, Standby
+Beacon Lights=On
+Emergency Lights=Arm
+Fmc=Setup / Check
+Departure Briefing=Complete
+Doors=Closed
 --Startup--
-APU MASTER=ON
-FUEL PUMP SWITCHES=ON
-APU=START
-APU BLEED=RUN (WHEN AVAILABLE)
-APU GEN=ON / CHECK VOLTS
-REQUEST PUSHBACK=DONE
-THRUST LEVERS=IDLE
-ENGINE AREA=CLEAR
-ENGINE MODE SELECTOR=IGN / START
-ENGINE MASTER 2=START
-ENG 2 AT N2 > 20% FUEL FLOW=CHECK ON
-ENG 2 N1 INCREASING AS N2 INCR.=CHECK
-OIL PRESSURE=CHECK
-GENERATOR SWITCH=ON
-ENGINE MASTER 1=START
-ENG 1 AT N2 > 20% FUEL FLOW=CHECK ON
-ENG 1 N1 INCREASING AS N2 INCR.=CHECK
-OIL PRESSURE=CHECK
-GENERATOR SWITCH=ON
-FUEL FLOW=CHECK
-HYDRAULIC PUMP SWITCHES=ON
-APU=OFF
-ENGINE MODE SELECTOR=NORM
+Apu Master=On
+Fuel Pump Switches=On
+Apu=Start
+Apu Bleed=Run (When Available)
+Apu Gen=On / Check Volts
+Request Pushback=Done
+Thrust Levers=Idle
+Engine Area=Clear
+Engine Mode Selector=Ign / Start
+Engine Master 2=Start
+Eng 2 At N2 > 20% Fuel Flow=Check On
+Eng 2 N1 Increasing As N2 Incr.=Check
+Oil Pressure=Check
+Generator Switch=On
+Engine Master 1=Start
+Eng 1 At N2 > 20% Fuel Flow=Check On
+Eng 1 N1 Increasing As N2 Incr.=Check
+Oil Pressure=Check
+Generator Switch=On
+Fuel Flow=Check
+Hydraulic Pump Switches=On
+Apu=Off
+Engine Mode Selector=Norm
 --Before Taxi--
-PROBE/WINDOW HEAT=AUTO
-HDG INDICATOR / ALTIMITERS=SET
-STDBY INSTRUMENTS=SET
-RADIOS AND AVIONICS=SET FOR DEPARTURE
-AUTOPILOT=SET (DON'T ACTIVATE)
-F/D=ON
-ELEVATOR TRIM=SET FOR TAKE-OFF
-FLIGHT CONTROLS=FREE AND CORRECT
-REQUEST TAXI CLEARANCE=DONE
+Probe/Window Heat=Auto
+Hdg Indicator / Altimiters=Set
+Stdby Instruments=Set
+Radios And Avionics=Set For Departure
+Autopilot=Set (Don'T Activate)
+F/D=On
+Elevator Trim=Set For Take-Off
+Flight Controls=Free And Correct
+Request Taxi Clearance=Done
 --Taxi--
-TAXI LIGHTS=ON
-PARKING BRAKE=RELEASE
-TAXI TO RUNWAY=MAX SPEED 20kts
-BRKS/GYRO/TURN COORDINATOR=CHECK DURING TAXI
-T/O CONFIG=DEPRESS / CHECK
-T/O MEMO=GREEN
+Taxi Lights=On
+Parking Brake=Release
+Taxi To Runway=Max Speed 20Kts
+Brks/Gyro/Turn Coordinator=Check During Taxi
+T/O Config=Depress / Check
+T/O Memo=Green
 --Before Take Off--
-PARKING BRAKE=SET
-FLIGHT INSTRUMENTS=CHECK
-ENGINE INSTRUMENTS=CHECK
-TAKE-OFF DATA=(V1, VR, V2) CHECK
-NAV EQUIPMENT=CHECK
-LANDING LIGHTS=ON
-STROBE LIGHT=ON
-PITOT HEAT=AUTO
-DE-ICE=AS REQUIRED
-TRANSPONDER=TA/RA
-AUTOBRAKE=MAX
-REQUEST TAKE OFF CLEARANCE=DONE
+Parking Brake=Set
+Flight Instruments=Check
+Engine Instruments=Check
+Take-Off Data=(V1, Vr, V2) Check
+Nav Equipment=Check
+Landing Lights=On
+Strobe Light=On
+Pitot Heat=Auto
+De-Ice=As Required
+Transponder=Ta/Ra
+Autobrake=Max
+Request Take Off Clearance=Done
 --Take Off--
-ENGINES AT 40% N1=DONE
-THRUST=FULL OR TO/GA
-BRAKES=RELEASE
-AT 100 KTS=SPEED CROSSCHECK
-AT V1=COMMITED / GO (DECISION)
-AT VR=ROTATE
-PITCH=SLOW TO 10deg / up to 15deg
-POSITIVE RATE OF CLIMB=GEAR UP
-PASSING F SPEED (PFD)=FLAPS 0
-SPOILERS=DISARM
-LANDING LIGHTS=AS REQUIRED
+Engines At 40% N1=Done
+Thrust=Full Or To/Ga
+Brakes=Release
+At 100 Kts=Speed Crosscheck
+At V1=Commited / Go (Decision)
+At Vr=Rotate
+Pitch=Slow To 10Deg / Up To 15Deg
+Positive Rate Of Climb=Gear Up
+Passing F Speed (Pfd)=Flaps 0
+Spoilers=Disarm
+Landing Lights=As Required
 --Climb--
-THRUST LEVERS=CLB DETENT
-AP1=ENGAGE AS REQUIRED
-TAXI LIGHTS=OFF
-ALTIMETER=AT TA PULL TO SET STD
-BELOW 10'000FT=MAX. 250 KIAS
-ATC=AS REQUIRED
-LANDING LIGHTS=OFF
-FASTEN SEAT BELTS=OFF AFTER FL100
+Thrust Levers=Clb Detent
+Ap1=Engage As Required
+Taxi Lights=Off
+Altimeter=At Ta Pull To Set Std
+Below 10'000Ft=Max. 250 Kias
+Atc=As Required
+Landing Lights=Off
+Fasten Seat Belts=Off After Fl100
 --Cruise--
-ACCELERATE TO CRUISE SPEED=DONE
-ENGINE & INSTRUMENTS=MONITOR
-FUEL QUANTITY=CHECK
-RADIOS=TUNED & SET
-AUTOPILOT=CHECK & SET
-LIGHTS=AS REQUIRED
-ATIS / AIRPORT INFORMATION=CHECK
-ALTIMETER=CHECK
-RADIOS=SET
-DE-ICE=AS REQUIRED
-TOD=SET TCAS TO BELOW
+Accelerate To Cruise Speed=Done
+Engine & Instruments=Monitor
+Fuel Quantity=Check
+Radios=Tuned & Set
+Autopilot=Check & Set
+Lights=As Required
+Atis / Airport Information=Check
+Altimeter=Check
+Radios=Set
+De-Ice=As Required
+Tod=Set Tcas To Below
 --Descent--
-FL240=0.76 MACH
-FL180=0.67 MACH
-AT TA=DONE
-ALTIMETER=RESET TO LOCAL
-FL120=280 KIAS
-SPEED=250 KIAS BELOW 10000ft
-LANDING LIGHTS=ON
-LS=ON
-FUEL QUANTITIES & BALANCE=CHECK
-FLAPS / LANDING GEAR=CHECK UP
-CHECK WEATHER=DONE
+Fl240=0.76 Mach
+Fl180=0.67 Mach
+At Ta=Done
+Altimeter=Reset To Local
+Fl120=280 Kias
+Speed=250 Kias Below 10000Ft
+Landing Lights=On
+Ls=On
+Fuel Quantities & Balance=Check
+Flaps / Landing Gear=Check Up
+Check Weather=Done
 --Approach--
-FASTEN SEAT BELTS=ON
-RADIOS=SET
-SPEED=210 KIAS
-LANDING LIGHTS=CHECK ON
-TAXI LIGHTS=ON
-GND SPOILERS=ARM
-AUTO BRAKE=SET
-FLAPS=FLAPS 1
-SPEED=ESTABLISH 180 KIAS
-AT 6 DME=FLAPS 2
-SPEED=MANAGED
-LANDING GEAR=DOWN
-LANDING GEAR 3 GREEN=FLAPS 3
-FLAPS=FULL
+Fasten Seat Belts=On
+Radios=Set
+Speed=210 Kias
+Landing Lights=Check On
+Taxi Lights=On
+Gnd Spoilers=Arm
+Auto Brake=Set
+Flaps=Flaps 1
+Speed=Establish 180 Kias
+At 6 Dme=Flaps 2
+Speed=Managed
+Landing Gear=Down
+Landing Gear 3 Green=Flaps 3
+Flaps=Full
 --Final Glideslope Descent--
-SPEED=ESTABLISH 145 KIAS
-PARKING BRAKE=VERIFY OFF
-DE-ICE=AS REQUIRED
+Speed=Establish 145 Kias
+Parking Brake=Verify Off
+De-Ice=As Required
 --Landing--
-LANDING GEAR=CHECK DOWN
-AUTOPILOT=AS REQUIRED
-GO-AROUND ALTUTUDE=SET IN FCU
-AUTO-THRUST=AS REQUIRED
-LANDING MEMO=NO BLUE
-LANDING SPEED=MANAGED
-AFTER TOUCH DOWN=REVERSE THRUST
-SPOILERS=VERIFY EXTENDED
-BRAKES=AS REQUIRED
-AT 60 KIAS=CANCEL REVERSE THRUST
+Landing Gear=Check Down
+Autopilot=As Required
+Go-Around Altutude=Set In Fcu
+Auto-Thrust=As Required
+Landing Memo=No Blue
+Landing Speed=Managed
+After Touch Down=Reverse Thrust
+Spoilers=Verify Extended
+Brakes=As Required
+At 60 Kias=Cancel Reverse Thrust
 --After Landing--
-SPOILER=DISARMED
-FLAPS=RETRACT
-ENG MODE SELECTOR=NORM
-LANDING LIGHTS=OFF
-STROBE LIGHTS=OFF
-ANTI ICE=AS REQUIRED
-APU=START
-BRAKE TEMP=CHECK
-TRANSPONDER=OFF
-TAXI SPEED TO GATE=MAX 20 knots
-APU=START / CHECK RUN
-APU=GEN ON / CHECK VOLTS
-ELEVATOR TRIM=TAKEOFF SETTING
-TAXI LIGHTS=OFF WHEN TURN TO GATE
+Spoiler=Disarmed
+Flaps=Retract
+Eng Mode Selector=Norm
+Landing Lights=Off
+Strobe Lights=Off
+Anti Ice=As Required
+Apu=Start
+Brake Temp=Check
+Transponder=Off
+Taxi Speed To Gate=Max 20 Knots
+Apu=Start / Check Run
+Apu=Gen On / Check Volts
+Elevator Trim=Takeoff Setting
+Taxi Lights=Off When Turn To Gate
 --Shutdown--
-PARKING BRAKES=SET
-THRUST LEVERS=IDLE
-GROUND CONTACT=ESTABLISH
-GROUND OPERATIONS=AS REQUIRED (FMC2)
-ELECTRICAL POWER=ESTABLISH
-ENGINE MASTER 1 & 2=OFF
-NAV LIGHTS=OFF
-EXTERIOR LIGHTS=AS REQUIRED
-ANTI ICE=OFF
-PASSENGER SIGNS=OFF
-DOORS=OPEN
-FLIGHT DIRECTOR=OFF
-APU BLEED=AS REQUIRED
-FUEL PUMPS=ALL OFF
-BEACON=OFF
-ECAM STS=DEPRESS
-PANEL LIGHTS=OFF
-ADIRS=OFF
-AVIONICS=OFF
-APU=AS REQUIRED
-BATTERIES=AS REQUIRED
---Checklist by tibonev--
+Parking Brakes=Set
+Thrust Levers=Idle
+Ground Contact=Establish
+Ground Operations=As Required (Fmc2)
+Electrical Power=Establish
+Engine Master 1 & 2=Off
+Nav Lights=Off
+Exterior Lights=As Required
+Anti Ice=Off
+Passenger Signs=Off
+Doors=Open
+Flight Director=Off
+Apu Bleed=As Required
+Fuel Pumps=All Off
+Beacon=Off
+Ecam Sts=Depress
+Panel Lights=Off
+Adirs=Off
+Avionics=Off
+Apu=As Required
+Batteries=As Required
+--Checklist By Tibonev--
