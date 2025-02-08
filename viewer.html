@@ -5,25 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checklists Avion simulation</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: black; color: white;}
-        a { color: #00FFFF; text-decoration: none; }
+        body { font-family: Arial, sans-serif; background-color: white; color: black; padding: 30px;}
+        a { color: blue; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .header { color: #00FF00; font-size: 2.0em; font-weight: bold; }
-        .section { color: #FFD700; font-size: 1.5em; margin-top: 10px; }
-        .item { cursor: pointer; display: flex; font-size: 1.5em;}
-        .special { color: #FFA500; font-style: italic;  font-size: 1.5em;}
-        .toggled { color: #00FFFF; text-decoration: line-through; }
-        .left { width: 50px; word-wrap: break-word; }
-        .right { width: 50px; word-wrap: break-word; }
-        .center { max-width: fit-content; margin-left: auto; margin-right: auto; }
-}
+        .header {color: darkgoldenrod; font-size: 1.5em; font-weight: bold; }
+        .section {color: darkgoldenrod; font-size: 1.2em; margin-top: 10px; }
+        .item {cursor: pointer; display: flex; }
+        .special { color: purple; font-style: italic; }
+        .toggled { text-decoration: line-through;}
+        .left { width: 40ch; word-wrap: break-word; }
+        .right { width: 40ch; word-wrap: break-word; }
+        .center { display: block;}
     </style>
 </head>
 <body>
-    <div class="center">
-        <a href="index.html">⬅ Retour à la page principale</a>
-        <div id="file-content"></div>
-    </div>
+    <a href="index.html">⬅ Retour à la page principale</a>
+    <div class="center" id="file-content"></div>
+
     <script>
         function getQueryParam(name) {
             const params = new URLSearchParams(window.location.search);
