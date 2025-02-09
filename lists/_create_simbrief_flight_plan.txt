@@ -1,18 +1,25 @@
 Random Flight Database (Pc)
---Recherche D'un Vol Selon Des Critères--
+--Recherche D'Un Vol Selon Des Critères--
 Bouton Random Flight Database=Click
-Filtres De Recherche À Gauche=Click
 Filtre Aéroport De Départ=Cyul
 Filtre Aéroport D'Arrivée=Cyqb
 Filtre Avion=A320
 **L'Avion Peut-Être A319 A320 A21N A332 Dh8D
 Filtre Multiple=10
 Search=Click
---Sélection D'un Vol--
+--Sélection D'Un Vol--
 Sélectionnez Un Vol=Cliquez
-Sélectionnez Similaire, Infos (Flightaware)=Cliquez
+Sélectionnez Similaire, Infos (FlightAware)=Cliquez
+--Flightaware--
 Sélectionnez Le Même Numéro De Vol=Cliquez
 Sélectionnez La Même Journée=Cliquez
 Flight Aware Altitude=
 Flight Aware Porte De Départ=
 Flight Aware Porte D'Arrivée=
+--Générer Le Vol Dans Simbrief--
+Sélectionnez Exporter (Simbrief)=Cliquez
+--Simbrief--
+Altitude=Entrez Celui De FlightAware
+Dispatch Remarks=Entrez Porte De Départ De FlightAware
+Dispatch Remarks=Entrez Porte D'Arrivée De FlightAware
+Generate Flight=Click
