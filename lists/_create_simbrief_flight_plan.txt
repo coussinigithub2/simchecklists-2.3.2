@@ -1,5 +1,5 @@
 Random Flight Database (Pc)
---Recherche D'Un Vol Selon Des Critères--
+--Recherche D'un Vol Selon Des Critères--
 Bouton Random Flight Database=Click
 Filtres De Recherche À Gauche=Click
 Filtre Aéroport De Départ=Cyul
@@ -8,9 +8,11 @@ Filtre Avion=A320
 **L'Avion Peut-Être A319 A320 A21N A332 Dh8D
 Filtre Multiple=10
 Search=Click
---Sélection D'Un Vol--
+--Sélection D'un Vol--
 Sélectionnez Un Vol=Cliquez
-Sélectionnez Flightaware=Cliquez
-Flight Aware Altitude=Notez
-Flight Aware Porte De Départ=Notez
-Flight Aware Porte D'Arrivée=Notez
+Sélectionnez Similaire, Infos (Flightaware)=Cliquez
+Sélectionnez Le Même Numéro De Vol=Cliquez
+Sélectionnez La Même Journée=Cliquez
+Flight Aware Altitude=
+Flight Aware Porte De Départ=
+Flight Aware Porte D'Arrivée=

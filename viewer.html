@@ -9,7 +9,7 @@
         a { color: #5C4033; text-decoration: none; font-size: 1.5em;}
         a:hover { text-decoration: underline; }
         .header {color: #5C4033; font-size: 2em; font-weight: bold; text-decoration: underline; margin-top: 30px;}
-        .section {color: #5C4033; font-size: 1.5em; font-weight: bold; margin-top: 10px; font-weight: bold; text-decoration: underline;}
+        .section {color: #5C4033; font-size: 1.5em; font-weight: bold; margin-top: 10px; text-decoration: underline;}
         .item {font-size: 1.3em;}
         .special {font-size: 1.3em; color: grey; font-style: italic; }
         .toggled {color: #b0413e; text-decoration: line-through;}
@@ -31,6 +31,7 @@
 
         .left { font-size: 1.3em; width: 40ch; word-wrap: break-word; }
         .right { font-size: 1.3em; width: 40ch; word-wrap: break-word; }
+        input { font-size: 1.3em; width: 100%; }
     </style>
 </head>
 <body>
@@ -95,8 +96,15 @@
 
                     const thRight = document.createElement("th");
                     thRight.className = "right";
-                    thRight.textContent = right;
-
+                    
+                    if (right) {
+                        thRight.textContent = right;
+                    } else {
+                        const input = document.createElement("input");
+                        input.type = "text";
+                        thRight.appendChild(input);
+                    }
+                    
                     tr.appendChild(thLeft);
                     tr.appendChild(thRight);
                     tr.onclick = () => tr.classList.toggle("toggled");
