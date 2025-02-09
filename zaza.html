@@ -3,47 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thèmes Doux</title>
+    <title>Table centrée</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        .theme {
-            padding: 20px; 
-            margin: 20px auto;
-            border-radius: 10px;
-            max-width: 600px;
+        body {
+            text-align: center;
         }
-        .classique { background-color: #2C2C2C; color: #EAEAEA; }
-        .classique .bleu { color: #A7C7E7; }
-        .classique .beige { color: #D4B996; }
-        
-        .naturel { background-color: #CBD5C0; color: #4A4A4A; }
-        .naturel .brun { color: #8D7762; }
-        .naturel .bleu { color: #7B9EAE; }
-        
-        .sable { background-color: #F4E1C4; color: #5C4033; }
-        .sable .bleu { color: #688E93; }
-        .sable .gris { color: #A8A8A8; }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th {
+            padding: 10px;
+        }
+        td {
+            width: 250px;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
-    <h1>Thèmes Doux</h1>
-    
-    <div class="theme classique">
-        <h2>Thème Classique Doux</h2>
-        <p class="bleu">Texte en bleu pastel</p>
-        <p class="beige">Texte en beige doux</p>
-    </div>
-    
-    <div class="theme naturel">
-        <h2>Thème Naturel</h2>
-        <p class="brun">Texte en brun taupe</p>
-        <p class="bleu">Texte en bleu gris</p>
-    </div>
-    
-    <div class="theme sable">
-        <h2>Thème Sable & Mer</h2>
-        <p class="bleu">Texte en bleu océan</p>
-        <p class="gris">Texte en gris pierre</p>
-    </div>
+    <table>
+        <tr>
+            <th>Colonne 1</th>
+            <th>Colonne 2 tres tres longeur</th>
+        </tr>
+        <tr>
+            <td>Cellule 1 tres longeur</td>
+            <td>Cellule 2</td>
+        </tr>
+        <tr>
+            <td>Cellule 3</td>
+            <td>Cellule 4</td>
+        </tr>
+    </table>
 </body>
 </html>
