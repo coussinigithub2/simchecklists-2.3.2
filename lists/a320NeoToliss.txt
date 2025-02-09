@@ -1,6 +1,22 @@
 Airbus A320Neo
---Preliminary Cockpit Preparation--
+--Pre Start Checklist--
+Aviation Flashlight=as required
+batteries=on
+external power=on
+Parking Brake=Set
+throttle=thrust levers idle (all)
+engine masters (ped)=off
+adirs=set to nav
+panels displays=brightness set
+nav lights=1
+panels lights=on
+
+
+
 Eng Master 1+2=Off
+
+
+
 Eng Mode Selector=Norm
 L/G Lever=Check Down
 Wipers=Off
