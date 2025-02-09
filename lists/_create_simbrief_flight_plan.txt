@@ -1,7 +1,9 @@
-Prepare A Flight
---Random Flight Database (Pc Program)--
-Program=Open
+Random Flight Database (PC)
+--Recherche d'un vol selon des critères--
+Random Flight Database=Click
+
 Random Flight Database Button=Click
+Sélectionnez les critières à gauche=Click
 Departure Icao (Exemple)=Cyul
 **Aircraft Type Can Be A319 A320 A21N (A321 Neo) A332 Dh8D
 Generate Flights (10)=Press
