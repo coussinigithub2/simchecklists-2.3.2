@@ -5,47 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checklists Avion simulation</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #F4E1C4;
-            color: #688E93;
-            margin: 0;
-            display: flex;
-            height: 100vh;
+        body { font-family: Arial, sans-serif; background-color: #F4E1C4; color: #688E93;}
+        a { color: #5C4033; text-decoration: none; font-size: 1.5em;}
+        a:hover { text-decoration: underline; }
+        .header {color: #5C4033; font-size: 2em; font-weight: bold; text-decoration: underline; margin-top: 30px;}
+        .section {color: #5C4033; font-size: 1.5em; font-weight: bold; margin-top: 10px; font-weight: bold; text-decoration: underline;}
+        .item {font-size: 1.5em; cursor: pointer; display: flex; }
+        .special {font-size: 1.5em; color: grey; font-style: italic; }
+        .toggled {color: #b0413e; text-decoration: line-through;}
+        .left { width: 40ch; word-wrap: break-word; }
+        .right { width: 40ch; word-wrap: break-word; }
+        #file-content { 
+            width: 50vw; 
+            height: 100vh; 
+            float: left; 
+            overflow-y: auto;
         }
-        #content {
-            flex: 2;
+        #iframe { 
+            height: 100vh; 
+            overflow: hidden;
             display: flex;
-            flex-direction: column;
             align-items: center;
-            padding: 20px;
+            justify-content: center;
         }
-        #sidebar {
-            flex: 1;
-            background-color: #ddd;
-            padding: 10px;
-            border-left: 2px solid #5C4033;
-        }
-        iframe {
+
+        #iframe iframe {
             width: 100%;
             height: 100%;
             border: none;
         }
-        a { color: #5C4033; text-decoration: none; font-size: 1.5em; }
-        a:hover { text-decoration: underline; }
-        .header { color: #5C4033; font-size: 2em; font-weight: bold; text-decoration: underline; margin-top: 30px; }
-        .section { color: #5C4033; font-size: 1.5em; font-weight: bold; margin-top: 10px; text-decoration: underline; }
-        .item { font-size: 1.3em; cursor: pointer; }
-        .special { font-size: 1.3em; color: grey; font-style: italic; }
-        .toggled { color: #b0413e; text-decoration: line-through; }
     </style>
 </head>
 <body>
-    <div id="content">
+    <div>
         <div id="file-content"></div>
-    </div>
-    <div id="sidebar">
-        <iframe src="https://dispatch.simbrief.com/briefing/latest"></iframe>
+        <div id="iframe">
+            <iframe src="https://dispatch.simbrief.com/briefing/latest"></iframe>
+        </div>
     </div>
 
     <script>
@@ -75,49 +71,36 @@
             backLink.textContent = "⬅ Retour à la page principale";
             contentDiv.appendChild(backLink);
 
-            const table = document.createElement("table");
-
             lines.forEach((line, index) => {
-                const tr = document.createElement("tr");
+                const div = document.createElement("div");
 
                 if (index === 0) {
-                    const th = document.createElement("th");
-                    th.className = "header";
-                    th.colSpan = 2;
-                    th.textContent = line;
-                    tr.appendChild(th);
+                    div.className = "header";
+                    div.textContent = line;
                 } else if (line.startsWith("--") && line.endsWith("--")) {
-                    const th = document.createElement("th");
-                    th.className = "section";
-                    th.colSpan = 2;
-                    th.textContent = line;
-                    tr.appendChild(th);
+                    div.className = "section";
+                    div.textContent = line;
                 } else if (line.startsWith("**")) {
-                    const th = document.createElement("th");
-                    th.className = "special";
-                    th.colSpan = 2;
-                    th.textContent = line;
-                    tr.appendChild(th);
+                    div.className = "special";
+                    div.textContent = line;
                 } else {
                     const [left, right] = line.split('=');
+                    const leftDiv = document.createElement("div");
+                    const rightDiv = document.createElement("div");
 
-                    const thLeft = document.createElement("th");
-                    thLeft.className = "left";
-                    thLeft.textContent = left;
+                    leftDiv.className = "left";
+                    rightDiv.className = "right";
+                    leftDiv.textContent = left;
+                    rightDiv.textContent = right;
 
-                    const thRight = document.createElement("th");
-                    thRight.className = "right";
-                    thRight.textContent = right || ""; // Gérer le cas où right est vide
-
-                    tr.appendChild(thLeft);
-                    tr.appendChild(thRight);
-                    tr.onclick = () => tr.classList.toggle("toggled");
+                    div.className = "item";
+                    div.appendChild(leftDiv);
+                    div.appendChild(rightDiv);
+                    div.onclick = () => div.classList.toggle("toggled");
                 }
 
-                table.appendChild(tr);
+                contentDiv.appendChild(div);
             });
-
-            contentDiv.appendChild(table);
         }
 
         const fileUrl = getQueryParam("file");
