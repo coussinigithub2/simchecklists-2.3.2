@@ -5,25 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checklists Avion simulation</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #F4E1C4; color: #688E93;}
-        a { color: #5C4033; text-decoration: none; font-size: 1.5em;}
+        body { font-family: Arial, sans-serif; background-color: #F4E1C4; color: #688E93; text-align: center; }
+        a { color: #5C4033; text-decoration: none; font-size: 1.5em; display: block; margin-bottom: 20px; }
         a:hover { text-decoration: underline; }
-        .header {color: #5C4033; font-size: 2em; font-weight: bold; text-decoration: underline; margin-top: 30px;}
-        .section {color: #5C4033; font-size: 1.0em; font-weight: bold; margin-top: 10px; font-weight: bold; text-decoration: underline;}
-        .item {margin-top: 10px; font-size: 1.0em; cursor: pointer; display: flex; }
-        .special {margin-top: 10px;font-size: 1.0em; color: grey; font-style: italic; }
-        .toggled {color: #b0413e; text-decoration: line-through;}
-        .left { width: 40ch; word-wrap: break-word; }
-        .right { width: 40ch; word-wrap: break-word; }
-        #file-content { 
-            width: 100vw; 
-            height: 100vh; 
-        }
+        #file-content { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
+        .container { width: 80%; max-width: 800px; text-align: left; }
+        .header, .section, .special, .item { width: 100%; }
+        .header { color: #5C4033; font-size: 2em; font-weight: bold; text-decoration: underline; margin-top: 30px; }
+        .section { color: #5C4033; font-size: 1.3em; font-weight: bold; margin-top: 10px; text-decoration: underline; }
+        .special { margin-top: 10px; font-size: 1.0em; color: #ff1100; font-style: italic; }
+        .item { margin-top: 10px; font-size: 1.0em; cursor: pointer; display: flex; }
+        .left, .right { width: 40ch; word-wrap: break-word; }
+        .toggled { color: #b0413e; text-decoration: line-through; }
     </style>
 </head>
 <body>
-    <div>
-        <div id="file-content"></div>
+    <div id="file-content">
+        <div class="container"></div>
     </div>
 
     <script>
@@ -35,7 +33,7 @@
         async function fetchFileContent(url) {
             const response = await fetch(url);
             if (!response.ok) {
-                document.getElementById("file-content").innerHTML = "<p>Impossible de charger le fichier.</p>";
+                document.querySelector(".container").innerHTML = "<p>Impossible de charger le fichier.</p>";
                 return;
             }
             const text = await response.text();
@@ -44,7 +42,7 @@
 
         function displayFileContent(text) {
             const lines = text.split("\n").map(line => line.trim());
-            const contentDiv = document.getElementById("file-content");
+            const contentDiv = document.querySelector(".container");
             contentDiv.innerHTML = ""; 
 
             // Ajouter le lien en premier
@@ -64,7 +62,7 @@
                     div.textContent = line;
                 } else if (line.startsWith("**")) {
                     div.className = "special";
-                    div.textContent = line;
+                    div.textContent = line.trim();
                 } else {
                     const [left, right] = line.split('=');
                     const leftDiv = document.createElement("div");
@@ -72,8 +70,8 @@
 
                     leftDiv.className = "left";
                     rightDiv.className = "right";
-                    leftDiv.textContent = left;
-                    rightDiv.textContent = right;
+                    leftDiv.textContent = left || "";
+                    rightDiv.textContent = right || "";
 
                     div.className = "item";
                     div.appendChild(leftDiv);
@@ -89,7 +87,7 @@
         if (fileUrl) {
             fetchFileContent(fileUrl);
         } else {
-            document.getElementById("file-content").innerHTML = "<p>Aucun fichier sélectionné.</p>";
+            document.querySelector(".container").innerHTML = "<p>Aucun fichier sélectionné.</p>";
         }
     </script>
 </body>
