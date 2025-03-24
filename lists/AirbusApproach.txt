@@ -1,0 +1,5 @@
+[FLS/FINAL APP] Approches de non-précision. Permet d'effectuer des approches de non-précision existantes (VOR, VOR/DME, NDB, NDB/DME, RNAV, LOC uniquement) de manière similaire aux approches de précision (ILS)
+
+[SLS (SBAS ou WASS)] Approche LPV. Grâce à cette technologie basée sur le GPS différentiel, il est possible de réaliser des approches RNAV (GNSS/GPS)
+
+[GLS (GBAS)] Approche GLS. Technologie basée sur le GPS différentiel pour effectuer une approche GLS de manière similaire à un ILS (Autoland) 
