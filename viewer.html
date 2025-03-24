@@ -10,12 +10,13 @@
         a:hover { text-decoration: underline; }
         #file-content { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
         .container { width: 80%; max-width: 800px; text-align: left; }
-        .header, .section, .special, .item { width: 100%; }
+        .header, .section, .special, .item, .item-tabs { width: 100%; }
         .header { background-color: black; color: white; font-size: 2em; margin-top: 30px; text-align: center;}
         .section {  background-color: black; color: white; font-size: 1.3em; margin-top: 10px; }
-        .section-tabs {  background-color: blue; color: white; font-size: 1.0em; margin-top: 10px; text-align: center;}
+        .section-tabs {  background-color: #09A2A2; font-size: 1.0em; margin-top: 10px; font-weight: bold; margin: .5rem 1rem;}
         .special { margin-top: 10px; font-size: 1.0em; font-style: italic; font-weight: bold; text-align: center;}
         .item { margin-top: 10px; font-size: 1.0em; cursor: pointer; display: flex; }
+        .item-tabs { margin-top: 10px; font-size: 1.0em; cursor: pointer; display: flex; margin: .5rem 1rem;}
         .left, .right { width: 40ch; word-wrap: break-word; }
         .toggled { color: #b0413e; text-decoration: line-through; }
     </style>
@@ -68,6 +69,7 @@
                     div.className = "section-tabs";
                     div.textContent = line.replaceAll("&&","");
                 } else {
+                    let itemClass = line.startsWith("##");
                     const [left, right] = line.split('=');
                     const leftDiv = document.createElement("div");
                     const rightDiv = document.createElement("div");
@@ -77,7 +79,7 @@
                     leftDiv.textContent = left || "";
                     rightDiv.textContent = right || "";
 
-                    div.className = "item";
+                    div.className = itemClass ? "item-class" : "item";
                     div.appendChild(leftDiv);
                     div.appendChild(rightDiv);
                     div.onclick = () => div.classList.toggle("toggled");
