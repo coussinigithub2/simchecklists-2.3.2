@@ -3,3 +3,19 @@
 [SLS (SBAS ou WASS)] Approche LPV. Grâce à cette technologie basée sur le GPS différentiel, il est possible de réaliser des approches RNAV (GNSS/GPS)
 
 [GLS (GBAS)] Approche GLS. Technologie basée sur le GPS différentiel pour effectuer une approche GLS de manière similaire à un ILS (Autoland) 
+
+Currently, GBAS is implemented on more than 100 airports, e.g.:
+
+Bremen (EDDW)
+Malaga (LEMG)
+Frankfurt (EDDF)
+Zurich (LSZH)
+Newark (KEWR)
+Houston's George Bush (KIAH)
+Moses Lake (KMWH)
+Charleston (KCHS)
+Sydney (YSSY)
+Chennai (VOMM)
+Saint Helena (FHSH)
+
+[RNP] Est une approche de précision LPV qui normalement fait un FINAL APP
