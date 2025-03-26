@@ -10,13 +10,14 @@
         a:hover { text-decoration: underline; }
         #file-content { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
         .container { width: 80%; max-width: 800px; text-align: left; }
-        .header, .section, .special, .item, .item-tabs { width: 100%; }
-        .header { background-color: black; color: white; font-size: 2em; margin-top: 30px; padding: .5rem 1rem;}
-        .section {  background-color: black; color: white; font-size: 1.0em; margin-top: 10px; padding: .5rem 1rem;}
-        .section-tabs {  background-color: #09A2A2; font-size: 1.0em; margin-top: 10px; font-weight: bold; padding: .5rem 1rem;}
-        .special { margin-top: 10px; font-size: 1.0em; font-style: italic; font-weight: bold;}
-        .item { margin-top: 10px; font-size: 1.0em; cursor: pointer; display: flex; }
-        .item-tabs { margin-top: 10px; font-size: 1.0em; cursor: pointer; display: flex; margin: .5rem 1rem;}
+        .header, .section, .section-tabs, .special, .item, .item-light, .item-tabs { width: 100%; }
+        .header { background-color: black; color: white; font-size: 2em; padding: 10px;}
+        .section {  background-color: black; color: white; font-size: 1.0em; padding: 10px;}
+        .section-tabs {  background-color: #09A2A2; color: black; font-size: 1.0em; padding: 10px;}
+        .special {font-size: 1.0em; font-style: italic; font-weight: bold; padding: 10px;}
+        .item { padding: 10px; font-size: 1.0em; cursor: pointer; display: flex;}
+        .item-light { padding: 10px; font-size: 1.0em; cursor: pointer; display: flex; background-color: lightyellow;}
+        .item-tabs { padding: 10px; font-size: 1.0em; cursor: pointer; display: flex;}
         .left, .right { width: 40ch; word-wrap: break-word; }
         .toggled { color: #b0413e; text-decoration: line-through; }
     </style>
@@ -70,8 +71,10 @@
                     div.textContent = line.replace(/^&&/,"");
                 } else {
                     let itemTabs = line.startsWith("##");
+                    let itemLight = line.startsWith("@@");
                     let [left, right] = line.split('=');
                     left = left.replace(/^##/,"\u25CF ");
+                    left = left.replace(/^@@/,"");
                     const leftDiv = document.createElement("div");
                     const rightDiv = document.createElement("div");
 
@@ -81,6 +84,7 @@
                     rightDiv.textContent = right || "";
 
                     div.className = itemTabs ? "item-tabs" : "item";
+                    div.className = itemLight ? "item-light" : "item";
                     div.appendChild(leftDiv);
                     div.appendChild(rightDiv);
                     div.onclick = () => div.classList.toggle("toggled");
