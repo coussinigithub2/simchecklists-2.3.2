@@ -166,7 +166,7 @@ FCU APPR=ON
 ##FCU "LOC"=ON
 --GREEN DOT PFD
 FLAPS=1
-&&IF ILS or GLS (LOC * or G/S*) for Autoland
+&&IF ILS or GLS (LOC * or G/S* and Autoland) or SLS (restricted)
 ##FCU AP2=ON
 --S-SPEED PFD
 FLAPS=2
