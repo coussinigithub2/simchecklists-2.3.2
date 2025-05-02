@@ -35,11 +35,9 @@
                     const li = document.createElement("li");
                     const a = document.createElement("a");
                     a.href = `ancien_viewer.html?file=${encodeURIComponent(file.download_url)}`;
-                    a.textContent = file.name;
+                    a.textContent = file.name+" ancien";
                     li.appendChild(a);
                     list.appendChild(li);
-                    const li = document.createElement("li");
-                    const a = document.createElement("a");
                     a.href = `viewer.html?file=${encodeURIComponent(file.download_url)}`;
                     a.textContent = file.name;
                     li.appendChild(a);
