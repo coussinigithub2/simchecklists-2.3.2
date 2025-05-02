@@ -34,14 +34,6 @@
                 if (file.type === "file" && file.name.endsWith(".txt")) {
                     const li = document.createElement("li");
                     const a = document.createElement("a");
-                    a.href = `ancien_viewer.html?file=${encodeURIComponent(file.download_url)}`;
-                    a.textContent = file.name + " (Ancien)";
-                    li.appendChild(a);
-                    list.appendChild(li);
-                }
-                if (file.type === "file" && file.name.endsWith(".txt")) {
-                    const li = document.createElement("li");
-                    const a = document.createElement("a");
                     a.href = `viewer.html?file=${encodeURIComponent(file.download_url)}`;
                     a.textContent = file.name;
                     li.appendChild(a);
