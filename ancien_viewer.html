@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklists Avion simulation</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: white; color: black; text-align: center; }
+        a { color: #5C4033; text-decoration: none; font-size: 1.5em; display: block; margin-bottom: 20px; }
+        a:hover { text-decoration: underline; }
+        #file-content { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
+        .container { width: 80%; max-width: 800px; text-align: left; }
+        .header, .section, .sub-section, .section-tabs, .special, .item, .item-light, .item-tabs { width: 100%; }
+        .header { background-color: black; color: white; font-size: 2em; padding: 10px; text-align: center;}
+        .section {  background-color: black; color: white; font-size: 1.0em; padding: 10px; margin-bottom: 10px; text-align: center;}
+        .sub-section {  background-color: #9f6712; color: white; font-size: 1.0em; padding: 10px; margin-bottom: 10px; text-align: center; text-decoration: underline;}
+        .section-tabs {  background-color: #09A2A2; color: white; font-size: 1.0em; padding: 10px;}
+        .special {font-size: 1.0em; font-style: italic; font-weight: bold; padding: 10px;}
+        .item { padding: 10px; font-size: 1.0em; cursor: pointer; display: flex;}
+        .item-light { padding: 10px; font-size: 1.0em; cursor: pointer; display: flex; background-color: #fff3cd;}
+        .item-tabs { padding: 10px; font-size: 1.0em; cursor: pointer; display: flex;}
+        .left, .right { width: 40ch; word-wrap: break-word; }
+        .toggled { color: #b0413e; text-decoration: line-through; }
+    </style>
+</head>
+<body>
+    <div id="file-content">
+        <div class="container"></div>
+    </div>
+
+    <script>
+        function getQueryParam(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+
+        async function fetchFileContent(url) {
+            const response = await fetch(url);
+            if (!response.ok) {
+                document.querySelector(".container").innerHTML = "<p>Impossible de charger le fichier.</p>";
+                return;
+            }
+            const text = await response.text();
+            displayFileContent(text);
+        }
+
+        function displayFileContent(text) {
+            const lines = text.split("\n").map(line => line.trim());
+            const contentDiv = document.querySelector(".container");
+            contentDiv.innerHTML = ""; 
+
+            // Ajouter le lien en premier
+            const backLink = document.createElement("a");
+            backLink.href = "index.html";
+            backLink.textContent = "⬅ Retour à la page principale";
+            contentDiv.appendChild(backLink);
+
+            lines.forEach((line, index) => {
+                const div = document.createElement("div");
+
+                if (index === 0) {
+                    div.className = "header";
+                    div.textContent = line;
+                } else if (line.startsWith("--")) {
+                    div.className = "section";
+                    div.textContent = line.replace(/^--/,"");
+                } else if (line.startsWith("%%")) {
+                    div.className = "sub-section";
+                    div.textContent = line.replace(/^%%/,"");
+                } else if (line.startsWith("**")) {
+                    div.className = "special";
+                    div.textContent = line.replace(/^\*\*/, "\u2192 ");
+                } else if (line.startsWith("&&")) {
+                    div.className = "section-tabs";
+                    div.textContent = line.replace(/^&&/,"");
+                } else {
+                    let itemTabs = line.startsWith("##");
+                    let itemLight = line.startsWith("@@");
+                    let [left, right] = line.split('=');
+                    left = left.replace(/^##/,"\u25CF ");
+                    left = left.replace(/^@@/,"");
+                    const leftDiv = document.createElement("div");
+                    const rightDiv = document.createElement("div");
+
+                    leftDiv.className = "left";
+                    rightDiv.className = "right";
+                    leftDiv.textContent = left || "";
+                    rightDiv.textContent = right || "";
+
+                    div.className = itemTabs ? "item-tabs" : "item";
+                    div.className = itemLight ? "item-light" : "item";
+                    div.appendChild(leftDiv);
+                    div.appendChild(rightDiv);
+                    div.onclick = () => div.classList.toggle("toggled");
+                }
+
+                contentDiv.appendChild(div);
+            });
+        }
+
+        const fileUrl = getQueryParam("file");
+        if (fileUrl) {
+            fetchFileContent(fileUrl);
+        } else {
+            document.querySelector(".container").innerHTML = "<p>Aucun fichier sélectionné.</p>";
+        }
+    </script>
+</body>
+</html>
