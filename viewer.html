@@ -10,17 +10,22 @@
     a:hover { text-decoration: underline; }
     #file-content { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
     .container { width: 100%; max-width: 800px; text-align: left; }
-    .accordion { cursor: pointer; background-color: black; color: white; font-size: 1.0em; padding: 10px 0px; margin-bottom: 10px; text-align: center;}
-    .panel { display: none; font-size: 1.0em; padding: 10px 0px; margin-bottom: 10px;}
-    .header, .sub-section, .section-tabs, .special, .item, .item-light, .item-tabs, .accordion, .panel {
+
+    .accordion1, .accordion2 {
+      cursor: pointer; color: white; font-size: 1.0em;
+      padding: 10px 0px; margin-bottom: 10px; text-align: center;
       width: 100%;
     }
-    .header { background-color: black; color: white; font-size: 2em; padding: 10px 0px; ; margin-bottom: 10px; text-align: center; }
-    .sub-section { background-color: #9f6712; color: white; padding: 10px 0px; text-align: center; text-decoration: underline; }
-    .section-tabs { background-color: #09A2A2; color: white; padding: 10px 0px; }
-    .special { font-style: italic; font-weight: bold; padding: 10px 0px; }
+    .accordion1 { background-color: black; }
+    .accordion2 { background-color: #9f6712; }
+
+    .panel { display: none; font-size: 1.0em; padding: 10px 0px; margin-bottom: 10px; width: 100%; }
+
+    .header { background-color: black; color: white; font-size: 2em; padding: 10px 0px; margin-bottom: 10px; text-align: center; }
+    .section-tabs { background-color: #09A2A2; color: white; padding: 10px 0px; width: 100%; }
+    .special { font-style: italic; font-weight: bold; padding: 10px 0px; width: 100%; }
     .item, .item-light, .item-tabs {
-      padding: 10px 0px; font-size: 1em; cursor: pointer; display: flex;
+      padding: 10px 0px; font-size: 1em; cursor: pointer; display: flex; width: 100%;
     }
     .item-light { background-color: #fff3cd; }
     .left, .right { width: 40ch; word-wrap: break-word; }
@@ -69,16 +74,15 @@
           return;
         }
 
-        if (line.startsWith("--")) {
-          // Close previous panel if any
+        if (line.startsWith("--") || line.startsWith("%%")) {
           if (panelDiv) {
             contentDiv.appendChild(panelDiv);
           }
 
-          // Create new accordion
           const acc = document.createElement("button");
-          acc.className = "accordion";
-          acc.textContent = line.replace(/^--/, "");
+          const isAccordion2 = line.startsWith("%%");
+          acc.className = isAccordion2 ? "accordion2" : "accordion1";
+          acc.textContent = line.replace(/^--|^%%/, "");
           acc.addEventListener("click", function () {
             this.classList.toggle("active");
             const panel = this.nextElementSibling;
@@ -86,20 +90,15 @@
           });
           contentDiv.appendChild(acc);
 
-          // Create new panel container
           panelDiv = document.createElement("div");
           panelDiv.className = "panel";
           return;
         }
 
-        // Create content inside the current panel
         if (panelDiv) {
           const div = document.createElement("div");
 
-          if (line.startsWith("%%")) {
-            div.className = "sub-section";
-            div.textContent = line.replace(/^%%/, "");
-          } else if (line.startsWith("**")) {
+          if (line.startsWith("**")) {
             div.className = "special";
             div.textContent = line.replace(/^\*\*/, "\u2192 ");
           } else if (line.startsWith("&&")) {
@@ -129,7 +128,6 @@
         }
       });
 
-      // Append last panel if it exists
       if (panelDiv) {
         contentDiv.appendChild(panelDiv);
       }
