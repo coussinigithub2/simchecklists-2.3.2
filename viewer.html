@@ -121,8 +121,16 @@
             leftDiv.textContent = left || "";
             rightDiv.textContent = right || "";
 
-            div.className = itemTabs ? "item-tabs" : (itemLight ? "item-light" : "item");
-            div.className = itemTabs ? "item-tabs" : (itemGroupe ? "item-groupe" : "item");
+            if (itemTabs) {
+              div.className = "item-tabs";
+            } else if (itemLight) {
+              div.className = "item-light";
+            } else if (itemGroupe) {
+              div.className = "item-groupe";
+            } else {
+              div.className = "item";
+            }
+
             div.appendChild(leftDiv);
             div.appendChild(rightDiv);
             div.onclick = () => div.classList.toggle("toggled");
