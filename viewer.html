@@ -24,10 +24,11 @@
     .header { background-color: black; color: white; font-size: 2em; padding: 10px 0px; margin-bottom: 10px; text-align: center; }
     .section-tabs { background-color: #09A2A2; color: white; padding: 10px 0px; width: 100%; }
     .special { font-style: italic; font-weight: bold; padding: 10px 0px; width: 100%; }
-    .item, .item-light, .item-tabs {
+    .item, .item-light, .item-groupe, .item-tabs {
       padding: 10px 0px; font-size: 1em; cursor: pointer; display: flex; width: 100%;
     }
     .item-light { background-color: #fff3cd; }
+    .item-groupe { background-color: #bee7c2; }
     .left, .right { width: 40ch; word-wrap: break-word; }
     .toggled { color: #b0413e; text-decoration: line-through; }
   </style>
@@ -107,9 +108,11 @@
           } else {
             let itemTabs = line.startsWith("##");
             let itemLight = line.startsWith("@@");
+            let itemGroupe = line.startsWith("$$");
             let [left, right] = line.split('=');
             left = left.replace(/^##/, "\u25CF ");
             left = left.replace(/^@@/, "");
+            left = left.replace(/^\$\$/, "");
             const leftDiv = document.createElement("div");
             const rightDiv = document.createElement("div");
 
@@ -119,6 +122,7 @@
             rightDiv.textContent = right || "";
 
             div.className = itemTabs ? "item-tabs" : (itemLight ? "item-light" : "item");
+            div.className = itemTabs ? "item-tabs" : (itemGroupe ? "item-groupe" : "item");
             div.appendChild(leftDiv);
             div.appendChild(rightDiv);
             div.onclick = () => div.classList.toggle("toggled");
