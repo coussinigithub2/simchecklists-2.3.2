@@ -87,16 +87,17 @@
           acc.textContent = line.replace(/^--|^%%/, "");
 
           acc.addEventListener("click", function () {
-            // Fermer tous les panneaux
             const allPanels = document.querySelectorAll(".panel");
             const allButtons = document.querySelectorAll(".accordion1, .accordion2");
             allPanels.forEach(p => p.style.display = "none");
             allButtons.forEach(b => b.classList.remove("active"));
 
-            // Ouvrir le bon panneau
             this.classList.add("active");
             const panel = this.nextElementSibling;
             panel.style.display = "block";
+
+            // Scroll vers le haut
+            window.scrollTo({ top: 0, behavior: "smooth" });
           });
 
           contentDiv.appendChild(acc);
