@@ -5,129 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Checklists Avion simulation</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: white;
-      color: black;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: row;
-    }
-    a {
-      color: #5C4033;
-      text-decoration: none;
-      font-size: 1.5em;
-      display: block;
-      margin-bottom: 20px;
-    }
+    body { font-family: Arial, sans-serif; background-color: white; color: black; text-align: center; }
+    a { color: #5C4033; text-decoration: none; font-size: 1.5em; display: block; margin-bottom: 20px; }
     a:hover { text-decoration: underline; }
-
-    #file-content {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-    }
-
-    .container {
-      width: 70%;
-      max-width: 800px;
-      text-align: left;
-      padding: 20px;
-    }
-
-    .right-panel {
-      width: 30%;
-      max-width: 400px;
-      padding: 20px;
-      background-color: #f2f2f2;
-      border-left: 1px solid #ccc;
-      position: fixed;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      overflow-y: auto;
-    }
+    #file-content {align-items: center; justify-content: center; min-height: 100vh; }
+    .container { width: 100%; max-width: 800px; text-align: left; margin-left: 20px; }
 
     .accordion1, .accordion2 {
-      cursor: pointer;
-      color: white;
-      font-size: 1.0em;
-      border: 0px;
-      padding: 10px 0px;
-      margin-bottom: 10px;
-      text-align: center;
+      cursor: pointer; color: white; font-size: 1.0em; border: 0px;
+      padding: 10px 0px; margin-bottom: 10px; text-align: center;
       width: 100%;
     }
     .accordion1 { background-color: black; }
     .accordion2 { background-color: #9f6712; }
 
-    .panel {
-      display: none;
-      font-size: 1.0em;
-      padding: 10px 0px;
-      margin-bottom: 10px;
-      width: 100%;
-    }
+    .panel { display: none; font-size: 1.0em; padding: 10px 0px; margin-bottom: 10px; width: 100%; }
 
-    .header {
-      background-color: black;
-      color: white;
-      font-size: 2em;
-      padding: 10px 0px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    .section-tabs {
-      background-color: #09A2A2;
-      color: white;
-      padding: 10px 0px;
-      width: 100%;
-    }
-
-    .special {
-      font-style: italic;
-      font-weight: bold;
-      padding: 10px 0px;
-      width: 100%;
-    }
-
+    .header { background-color: black; color: white; font-size: 2em; padding: 10px 0px; margin-bottom: 10px; text-align: center; }
+    .section-tabs { background-color: #09A2A2; color: white; padding: 10px 0px; width: 100%; }
+    .special { font-style: italic; font-weight: bold; padding: 10px 0px; width: 100%; }
     .item, .item-light, .item-groupe, .item-tabs {
-      padding: 10px 0px;
-      font-size: 1em;
-      cursor: pointer;
-      display: flex;
-      width: 100%;
+      padding: 10px 0px; font-size: 1em; cursor: pointer; display: flex; width: 100%;
     }
-
     .item-light { background-color: #fff3cd; }
     .item-groupe { background-color: #bee7c2; }
 
-    .left, .right {
-      width: 40ch;
-      word-wrap: break-word;
-    }
-
-    .toggled {
-      color: #b0413e;
-      text-decoration: line-through;
-    }
-
-    .info-item {
-      padding: 8px;
-      margin-bottom: 5px;
-      background-color: #e0e0e0;
-      border-left: 5px solid #5C4033;
-    }
+    .left, .right { width: 40ch; word-wrap: break-word; }
+    .toggled { color: #b0413e; text-decoration: line-through; }
   </style>
 </head>
 <body>
   <div id="file-content">
     <div class="container"></div>
-    <div class="right-panel" id="right-panel">
-      <h2>Infos</h2>
-    </div>
   </div>
 
   <script>
@@ -149,7 +58,6 @@
     function displayFileContent(text) {
       const lines = text.split("\n").map(line => line.trim());
       const contentDiv = document.querySelector(".container");
-      const rightPanel = document.getElementById("right-panel");
       contentDiv.innerHTML = "";
 
       const backLink = document.createElement("a");
@@ -160,14 +68,6 @@
       let panelDiv = null;
 
       lines.forEach((line, index) => {
-        if (line.startsWith("!!")) {
-          const infoDiv = document.createElement("div");
-          infoDiv.className = "info-item";
-          infoDiv.textContent = line.replace(/^!!/, "");
-          rightPanel.appendChild(infoDiv);
-          return;
-        }
-
         if (index === 0) {
           const div = document.createElement("div");
           div.className = "header";
@@ -196,6 +96,7 @@
             const panel = this.nextElementSibling;
             panel.style.display = "block";
 
+            // Scroll vers le haut
             window.scrollTo({ top: 0, behavior: "smooth" });
           });
 
