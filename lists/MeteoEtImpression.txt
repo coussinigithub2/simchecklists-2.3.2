@@ -1,0 +1,35 @@
+Pour imprimer
+flight plan initialisation data
+performance data
+wind
+
+data
+acarts/print function
+acarts/function
+
+pour demander ce que l'on désire imprimer
+F-PLN INIT REQ* clic
+TO DATA REQ* clic
+WIND DATA REQ* clic
+
+pour imprimer les demandes
+acarts/function
+F-PLN INIT PRINT* clic
+TO DATA PRINT* clic
+WIND DATA PRINT* clic
+
+
+cliquez sur les pages imprimé à droite du parking brake
+au dessus du throttle
+cliquez au centre pour afficher la page suivante
+cliquez à droite pour enlever les feuilles
+
+
+============HOPPIES====================
+my accars account
+email: coussini@gmail.com
+code: L2UErPEqHJQfp7Mx
+retrieve account
+your network: None
+Update Network button: press
+
