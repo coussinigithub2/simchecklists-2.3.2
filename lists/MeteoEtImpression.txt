@@ -26,10 +26,29 @@ cliquez à droite pour enlever les feuilles
 
 
 ============HOPPIES====================
-my accars account
+my accars account: https://www.hoppie.nl/acars/system/account.html
 email: coussini@gmail.com
 code: L2UErPEqHJQfp7Mx
 retrieve account
 your network: None
 Update Network button: press
 
+=====ENTER LOGON CODE INTO ISCS HOPPIES====
+Setings accounts/Hoppie cpdlc logon: paste
+recheck id press
+
+=====MCDU HOPPIES (must be donne after init page done)
+ATC COMM
+CONNECTION
+NOTIFICATION
+ATC CENTER: EPWW
+NOTIFY *: CLICK
+CONNECTION STATUS: CLICK
+
+====POUR OBTENIR METAR (BARO)====
+MCDU MENU
+ATSU
+AOC MENU
+WX/ATIS
+METAR*
+(les metar des depart, destination et altrernative s'imprime)
