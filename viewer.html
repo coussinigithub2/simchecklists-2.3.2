@@ -97,7 +97,7 @@
             panel.style.display = "block";
 
             // Scroll vers le haut
-            window.scrollTo({ top: 0, behavior: "smooth" });
+            this.scrollIntoView({ behavior: "smooth", block: "start" });
           });
 
           contentDiv.appendChild(acc);
