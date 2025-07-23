@@ -23,6 +23,7 @@
 
     .header { background-color: black; color: white; font-size: 2em; padding: 10px 0px; margin-bottom: 10px; text-align: center; }
     .section-tabs { background-color: #09A2A2; color: white; padding: 10px 0px; width: 100%; }
+    .section-tabs-rouge { background-color: #f8d7da; color: black; padding: 10px 0px; width: 100%;}
     .special { font-style: italic; font-weight: bold; padding: 10px 0px; width: 100%; }
     .item, .item-light, .item-groupe, .item-tabs {
       padding: 10px 0px; font-size: 1em; cursor: pointer; display: flex; width: 100%;
@@ -113,10 +114,16 @@
           if (line.startsWith("**")) {
             div.className = "special";
             div.textContent = line.replace(/^\*\*/, "\u2192 ");
-          } else if (line.startsWith("&&")) {
+          }
+          else if (line.startsWith("&&")) {
             div.className = "section-tabs";
             div.textContent = line.replace(/^&&/, "");
-          } else {
+          }
+          else if (line.startsWith("??")) {
+            div.className = "section-tabs-rouge";
+            div.textContent = line.replace(/^\?\?/, "");
+          }
+          else {
             let itemTabs = line.startsWith("##");
             let itemLight = line.startsWith("@@");
             let itemGroupe = line.startsWith("$$");
