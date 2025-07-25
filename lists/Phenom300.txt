@@ -1,9 +1,14 @@
 AEROBASK PHENOM 300
 
 OPARATING ICING
-OAT < 10c OU HUMIDITÉ VISIBLE, NUAGE
-ADS PROBES KNOB………………………………………………………………………………………….ON (BEFORE ENGINE START)
-
+OAT < 10C (G1000 PILOT LEFT BELLOW)
+--BEFORE ENGINE START
+ADS PROBES KNOB………………………………………………………………………………………….ON
+--ENGINE RUNNING BEFORE TAKEOFF
+WSHLD 1 & 2 SWITCHES………………………………………………………………………………….ON
+ADS PROBES KNOB………………………………………………………………………………………….AUTO
+ICE PROTECTION ENG1 & ENG2………………………………………………………………………………….ON
+WINGSTAB SWITCH………………………………………………………………………………………..ON
 
 --BEFORE COCKPIT PREPARATION
 &&OPEN HTTPS://WWW.NEXTSIMFLIGHT.COM/RANDOM PAGE
