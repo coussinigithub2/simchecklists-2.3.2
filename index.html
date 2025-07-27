@@ -28,17 +28,21 @@
                 document.getElementById("file-list").innerHTML = "<li>Impossible de charger les fichiers.</li>";
                 return;
             }
+
             const files = await response.json();
             const list = document.getElementById("file-list");
-            files.forEach(file => {
-                if (file.type === "file" && file.name.endsWith(".txt")) {
-                    const li = document.createElement("li");
-                    const a = document.createElement("a");
-                    a.href = `viewer.html?file=${encodeURIComponent(file.download_url)}`;
-                    a.textContent = file.name;
-                    li.appendChild(a);
-                    list.appendChild(li);
-                }
+
+            const txtFiles = files
+                .filter(file => file.type === "file" && file.name.endsWith(".txt"))
+                .sort((a, b) => a.name.localeCompare(b.name));
+
+            txtFiles.forEach(file => {
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.href = `viewer.html?file=${encodeURIComponent(file.download_url)}`;
+                a.textContent = file.name;
+                li.appendChild(a);
+                list.appendChild(li);
             });
         }
 
