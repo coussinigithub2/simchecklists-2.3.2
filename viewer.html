@@ -24,12 +24,12 @@
     .header { background-color: black; color: white; font-size: 2em; padding: 10px 0px; margin-bottom: 10px; text-align: center; }
     .section-tabs { background-color: #09A2A2; color: white; padding: 10px 0px; width: 100%; }
     .section-tabs-rouge { background-color: #265d5d; color: white; padding: 10px 0px; width: 100%;}
-    .special { font-style: italic; font-weight: bold; padding: 10px 0px; width: 100%; }
-    .item, .item-light, .item-groupe, .item-tabs {
+    .special { padding: 10px 0px; width: 100%; }
+    .item, .item-light, .item-tabs {
       padding: 10px 0px; font-size: 1em; cursor: pointer; display: flex; width: 100%;
     }
     .item-light { background-color: #fff3cd; }
-    .item-groupe { background-color: #bee7c2; }
+    .item-groupe { padding: 5px 0px; font-size: 1em; cursor: pointer; display: flex; text-decoration: overline underline}
 
     .left, .right { width: 40ch; word-wrap: break-word; }
     .toggled { color: #b0413e; text-decoration: line-through; }
@@ -113,7 +113,7 @@
 
           if (line.startsWith("**")) {
             div.className = "special";
-            div.textContent = line.replace(/^\*\*/, "\u2192 ");
+            div.textContent = line.replace(/^\*\*/, "\u26A9 ");
           }
           else if (line.startsWith("&&")) {
             div.className = "section-tabs";
