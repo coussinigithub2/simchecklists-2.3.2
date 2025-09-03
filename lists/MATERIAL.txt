@@ -1,17 +1,65 @@
+
+LM_ascent GREEN GLOW ASCENT LM ALONE (vue partout)
+MATERIAL TARGET_T_GG
+0.0 1.0 0.0 1.0          # Ambient vert (green glow)
+0.0 1.0 0.0 1.0          # Diffuse vert
+0.0 0.0 0.0 1.0 0.0      # Pas de spéculaire (mat)
+0.0 1.0 0.0 1.0          # Emission vert lumineux (visible dans le noir)
+
+LM_ascent CIBLE GRISE ASCENT LM ALONE (vue partout)
+MATERIAL TARGET_WHITE
+0.91 0.91 0.91 1.0        # Ambient gris clair
+0.91 0.91 0.91 1.0        # Diffuse gris clair
+0.0 0.0 0.0 1.0 0.0       # Pas de spéculaire
+0.6 0.6 0.6 1.0           # Emission gris clair (visible dans le noir)
+
+LM_docked1 = apollo 11 a 14 non active orange (OK)
+LM_docked2 = apollo 14 a 17 non active orange (OK)
+LM_parked1 = apollo 11 a 14 dans le S-IVB mauve (OK)
+LM_parked1 = apollo 14 a 17 dans le S-IVB mauve (OK)
+LM_vessel1 = apollo 11 a 14 active bleu cyan (OK)
+LM_vessel2 = apollo 14 a 17 active bleu cyan (OK)
+
 MATERIAL LIGHT
 0.91 0.91 0.91 1.0        # Ambient gris clair
 0.91 0.91 0.91 1.0        # Diffuse gris clair
 0.0 0.0 0.0 1.0 0.0       # Pas de spéculaire
 0.6 0.6 0.6 1.0           # Emission gris clair (visible dans le noir)
 
-MATERIAL TARGET_Bright
-0.0 1.0 0.0 1.0          # Ambient vert
-0.0 1.0 0.0 1.0          # Diffuse vert
-0.0 0.0 0.0 1.0 0.0      # Pas de spéculaire (mat)
-0.0 1.0 0.0 1.0          # Emission vert lumineux
-
 MATERIAL TARGET_R
 1.0 0.0 0.0 1.0          # Ambient rouge
 1.0 0.0 0.0 1.0          # Diffuse rouge
 0.0 0.0 0.0 1.0 0.0      # Pas de spéculaire (mat)
 1.0 0.0 0.0 1.0          # Emission rouge (émet de la lumière rouge)
+
+LM_parked1
+
+MATERIAL TARGET_T_RougeGlow
+1.0 0.0 0.0 1.0          # Ambient rouge pur (rouge glow)
+1.0 0.0 0.0 1.0          # Diffuse rouge pur
+0.0 0.0 0.0 1.0 0.0      # Pas de spéculaire (mat)
+1.0 0.0 0.0 1.0          # Emission rouge vif (glow dans le noir)
+
+MATERIAL TARGET_T_VertGlow
+0.0 1.0 0.0 1.0          # Ambient vert (green glow)
+0.0 1.0 0.0 1.0          # Diffuse vert
+0.0 0.0 0.0 1.0 0.0      # Pas de spéculaire (mat)
+0.0 1.0 0.0 1.0          # Emission vert vif
+
+MATERIAL TARGET_OrangeGlow
+1.0 0.5 0.0 1.0          # Ambient orange (orange glow)
+1.0 0.5 0.0 1.0          # Diffuse orange
+0.0 0.0 0.0 1.0 0.0      # Pas de spéculaire (mat)
+1.0 0.5 0.0 1.0          # Emission orange vif
+
+MATERIAL TARGET_MauveGlow
+0.6 0.0 0.6 1.0          # Ambient mauve (mauve glow)
+0.6 0.0 0.6 1.0          # Diffuse mauve
+0.0 0.0 0.0 1.0 0.0      # Pas de spéculaire (mat)
+1.0 0.0 1.0 1.0          # Emission mauve vif
+
+MATERIAL TARGET_CyanGlow
+0.0 1.0 1.0 1.0          # Ambient (cyan glow)
+0.0 1.0 1.0 1.0          # Diffuse cyan
+0.0 0.0 0.0 1.0 0.0		 # Pas de spéculaire (mat)
+0.0 1.0 1.0 1.0          # Emission cyan vif
