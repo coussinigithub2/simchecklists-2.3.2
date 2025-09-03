@@ -1,0 +1,17 @@
+MATERIAL LIGHT
+0.91 0.91 0.91 1.0        # Ambient gris clair
+0.91 0.91 0.91 1.0        # Diffuse gris clair
+0.0 0.0 0.0 1.0 0.0       # Pas de spéculaire
+0.6 0.6 0.6 1.0           # Emission gris clair (visible dans le noir)
+
+MATERIAL TARGET_Bright
+0.0 1.0 0.0 1.0          # Ambient vert
+0.0 1.0 0.0 1.0          # Diffuse vert
+0.0 0.0 0.0 1.0 0.0      # Pas de spéculaire (mat)
+0.0 1.0 0.0 1.0          # Emission vert lumineux
+
+MATERIAL TARGET_R
+1.0 0.0 0.0 1.0          # Ambient rouge
+1.0 0.0 0.0 1.0          # Diffuse rouge
+0.0 0.0 0.0 1.0 0.0      # Pas de spéculaire (mat)
+1.0 0.0 0.0 1.0          # Emission rouge (émet de la lumière rouge)
