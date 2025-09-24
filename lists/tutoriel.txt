@@ -1,0 +1,88 @@
+[color=green][u]Tutoriel avec Orbiter 2024, de la Terre à la Lune, avec Coussini et le XR2 Ravinstar[/u][/color]
+
+Pour vous aider à bien réaliser ce tutoriel,
+mon ami [b]ChatGPT[/b] m’a secondé afin d’optimiser le carburant
+pour ce beau voyage avec Orbiter 2024.
+
+[url=https://zupimages.net/viewer.php?id=25/39/qydi.jpg][img]https://zupimages.net/up/25/39/qydi.jpg[/img][/url][url=https://zupimages.net/viewer.php?id=25/39/uky3.png][img]https://zupimages.net/up/25/39/uky3.png[/img][/url]
+
+[b][pilote][/b] : Hé… mais ce ne sera pas facile…
+[b][pilote][/b] : Je ne suis qu’un pilote du dimanche.
+[b][pilote][/b] : Je ne suis qu’un faucheur de marguerites.
+
+[b][coussini][/b] : Ne vous en faites pas !
+[b][coussini][/b] : Ce sera facile comme conduire une pantoufle dans l’espace.
+
+[url=https://zupimages.net/viewer.php?id=25/39/jnk2.png][img]https://zupimages.net/up/25/39/jnk2.png[/img][/url]
+
+[b][coussini][/b] : Si vous aimez les autos pilotes, tout comme moi, vous serez gâté.
+[b][coussini][/b] : Si vous acceptez cette mission, vous aurez à conduire le fameux [b]XR2 Ravenstar[/b]
+
+[b][pilote][/b] : Quel genre de ‘beubite’ que c’est ça !
+[b][ChatGPT][/b] : [i](traduction) Quel est cette pétoire que je devrais conduire là ![/i]
+
+[b][coussini][/b] : Hou là là… Ça commence bien !
+[b][coussini][/b] : Néanmoins, je vais vous guider.
+[b][coussini][/b] : Restez cool !
+
+[hr]
+[color=green][u]A) Voici la liste des éléments nécessaires à la réalisation de ce tutoriel[/u][/color]
+
+[list]
+[li][b]Orbiter 2024…[/b] [url=https://www.orbiter-forum.com/resources/orbiter-2024.5634/]ici[/url][/li]
+[li][b]Votre XR2 Ravenstar tout neuf…[/b] [url=https://www.orbiter-forum.com/resources/xr2-official-for-orbiter-2024.5644/]ici[/url][/li]
+[li][b]Lunar Transfer MFD…[/b] [url=https://www.orbiter-forum.com/resources/lunartransfer-mfd-ltmfd.5501/]ici[/url][/li]
+[li][b]Burn Time Calc MFD… [/b][url=https://www.orbiter-forum.com/resources/burntimecalcmfd-btc-3-1-for-orbiter-2016.736/]ici[/url][/li]
+[li][b]Base Sync MFD… [/b][url=https://www.orbiter-forum.com/resources/basesyncmfd-3-3-for-orbiter-2016.2705/]ici[/url][/li]
+[li][b]Cliquez sur le mot SURPRISE[/b] (ci-bas) pour obtenir votre surprise.[/li]
+[/list]
+[move][url=https://www.orbiter-forum.com/resources/pursuitmfd-2016.3096/]SURPRISE[/url][/move]
+
+[color=green][u]B) Préparatifs[/u][/color]
+
+[b]01 -[/b] Copiez le contenu dézippé de [b]Orbiter 2024[/b] sur un disque de votre choix (par exemple [b]C:/Orbiter-2024[/b]).
+[b]02 -[/b] Copiez le contenu dézippé de [b]XR2Ravenstar-2.0-x86[/b] à la racine de votre [b]Orbiter 2024[/b].
+[b]03 -[/b] Copiez le contenu dézippé de [b]LTMFD16[/b] à la racine de votre [b]Orbiter 2024[/b].
+[b]04 -[/b] Copiez le contenu dézippé de [b]BurnTimeCalcMFD-v.3.2.0-2016[/b] à la racine de votre [b]Orbiter 2024[/b].
+[b]05 -[/b] Copiez le contenu dézippé de [b]BaseSync 3.3 for Orbiter 2016[/b] à la racine de votre [b]Orbiter 2024[/b].
+[b]06 -[/b] Copiez le contenu dézippé de votre surprise [b]“PursuitMFD_171119”[/b] à la racine de votre [b]Orbiter 2024[/b].
+[b]07 -[/b] Ouvrez votre dossier [b]Orbiter-2024[/b] puis le dossier [b]Scenarios[/b] et puis le dossier [b]XR2 Ravenstar.[/b]
+
+[color=purple][u]Sur l’exemple suivant, [b]Orbiter-2024[/b] est sur mon disque [b]G[/b].[/u][/color]
+
+[url=https://zupimages.net/viewer.php?id=25/39/weyh.jpg][img]https://zupimages.net/up/25/39/weyh.jpg[/img][/url]
+
+[b]08 -[/b] Dans le dossier [b]XR2 Ravenstar[/b], prenez une copie du scénario “[b]1 - Ready for Takeoff to ISS.scn[/b]” et donnez-lui un nom comme “[b]Pret pour un decollage pour la lune.scn[/b]”.
+[b]09 -[/b] Ouvrez le fichier “[b]Pret pour un decollage pour la lune.scn[/b]”.
+[b]10 -[/b] Remplacez la ligne [b]Date MJD 51984.6053168878[/b] par [b]Date MJD 51918.06[/b] puis faites une sauvegarde de ce fichier.
+
+[color=green][u]C) Décollage[/u][/color]
+[b]01 -[/b] Ouvrez votre dossier [b]C:/Orbiter-2024[/b] puis double-cliquez sur [b]Orbiter_ng.exe[/b].
+
+[color=purple][u][i]Voici La fenêtre que vous venez d’ouvrir.[/i][/u][/color]
+
+[url=https://zupimages.net/viewer.php?id=25/39/sc9i.jpg][img]https://zupimages.net/up/25/39/sc9i.jpg[/img][/url]
+
+[b]02 -[/b] Cliquez sur le bouton [b]Options (à gauche)[/b] puis choisissez [b]Instruments & panels[/b].
+[b]03 -[/b] Ajustez les valeurs comme celles qui suivent.
+
+[url=https://zupimages.net/viewer.php?id=25/39/sf00.jpg][img]https://zupimages.net/up/25/39/sf00.jpg[/img][/url]
+
+[b]04 -[/b] Toujours concernant le bouton [b]Options (à gauche)[/b] choisissez [b]Joystick[/b].
+[b]05 -[/b] Dans la liste déroulante sous [b]Joystick device[/b] sélectionnez votre joystick.
+
+[url=https://zupimages.net/viewer.php?id=25/39/o9gq.jpg][img]https://zupimages.net/up/25/39/o9gq.jpg[/img][/url]
+
+[b][coussini][/b] : Cela permettra de piloter pendant 20 secondes votre vaisseau [b]XR2 Ravenstar[/b]
+[b][pilote][/b] : Je sort mon chrono !
+
+[b]06 -[/b] Cliquez sur le bouton [b]Video (à gauche)[/b].
+[b]07 -[/b] Ajustez les valeurs comme celles qui suivent.
+[b]08 -[/b] Sous [b]3D device[/b], choisissez votre carte graphique.
+
+[url=https://zupimages.net/viewer.php?id=25/39/aw2f.jpg][img]https://zupimages.net/up/25/39/aw2f.jpg[/img][/url]
+
+[b]09 -[/b] Cliquez sur le bouton [b]Modules[/b].
+[b]10 -[/b] Choisissez les [b]Modules[/b] tels que suivant.
+
+[url=https://zupimages.net/viewer.php?id=25/39/9uks.jpg][img]https://zupimages.net/up/25/39/9uks.jpg[/img][/url]
