@@ -1,0 +1,152 @@
+[center][color=green][b]Tutoriel avec Orbiter 2024, de la Terre à la Lune, avec Coussini et le XR2 Ravinstar (TOME 3)[/b][/color]
+[/center]
+
+[color=green][b]A) Préparatif du XR2 Raventar avant le départ[/b][/color]
+
+[b][Pilote][/b] : Je me sens super nerveux à cause de ce départ.
+[b][ChatGPT][/b] : ([i]Je vais parler en sourdine pour ne pas réveiller le maître[/i]).
+[b][ChatGPT][/b] : On sait bien, après tout ces cafés… il y a de quoi être nerveux.
+[b][ChatGPT][/b] : Ouf… je pense qu'il n'a rien entendu.
+[b][Coussini][/b] : J'ai tout entendu, ChatGPT. Gare à toi.
+[b][Coussini][/b] : Bref, c'est le temps de se mettre au boulot.
+[b][Coussini][/b] : Comme dirait Indiana Jones dans le jeu de [b]La machine infernale[/b]).
+[b][Pilote][/b] : Machine infernale… J'espère que non !
+
+[color=purple][b]A.1) Nous allons configurer le panneau du haut du XR2 Ravenstar[/b][/color]
+
+[url=https://zupimages.net/viewer.php?id=25/39/oyvo.jpg][img]https://zupimages.net/up/25/39/oyvo.jpg[/img][/url]
+
+[b][u]À MÉMORISER[/u][/b]
+
+[b]Pour afficher le panneau "haut" du XR2 Ravenstar[/b]
+[b]*[/b] Appuyez sur la combinaison de touches [b]CTRL-flèche haut[/b] du clavier.
+
+[b]Pour afficher alternativement les panneaux "principal" et "bas" du XR2 Ravenstar[/b]
+[b]*[/b] Appuyez sur la combinaison de touches [b]CTRL-flèche bas[/b] du clavier.
+
+[b]01 -[/b] : Démarrez le scénario "[b]XR2 va partir pour la lune[/b]" en double-cliquant sur ce dernier.
+[b]02 -[/b] Affichez le panneau "[b]haut[/b]" du [b]XR2 Ravenstar[/b].
+[b]03 -[/b] Appuyez sur le bouton encadré de rouge afin d'ouvrir le [b]CABIN HATCH[/b].
+
+[color=purple][b]A.2) Nous allons configurer le panneau du bas du XR2 Ravenstar[/b][/color]
+
+[url=https://zupimages.net/viewer.php?id=25/39/jags.jpg][img]https://zupimages.net/up/25/39/jags.jpg[/img][/url]
+
+[b]01 -[/b] Affichez le panneau "[b]bas[/b]" du [b]XR2 Ravenstar[/b].
+[b]02 -[/b] Appuyez sur le bouton encadré de rouge afin d'ouvrir [b]EXTERNAL COOLING[/b].
+[b]03 -[/b] Appuyez sur le bouton [b]APU rouge[/b], pointé par la flèche rouge.
+
+[b][Coussini][/b] : Ainsi, vous pouvez profiter de la brise extérieure.
+[b][ChatGPT][/b] : Vous pouvez fumer un gros cigare, mais je le déconseille !
+[b][Coussini][/b] : En effet, c'est pas le temps de partir en fumée (quel jeu de mots).
+
+[color=purple][b]A.3) Nous allons configurer le panneau du principal du XR2 Ravenstar[/b][/color]
+
+[url=https://zupimages.net/viewer.php?id=25/39/kz9i.jpg][img]https://zupimages.net/up/25/39/kz9i.jpg[/img][/url]
+
+[b]01 -[/b] Déplacez votre souris au centre, et en haut de l'écran.
+[b]02 -[/b] Cliquez sur le bouton [b]function[/b].
+[b]03 -[/b] Dans la fenêtre des fonctions, choisissez [b]External MFD[/b].
+[b]04 -[/b] Déplacez la nouvelle fenêtre à l'aide de la souris, et placez-la comme dans l'exemple de l'image suivante.
+[b]05 -[/b] Dans cette fenêtre, cliquez sur les boutons [b]PRJ[/b] et [b]DST[/b].
+
+[b][Coussini][/b] : Nous avons notre quatrième MFD de configuré. C'est le [b]MFD Orbit[/b].
+
+[color=green][b]B) Le grand départ pour la Lune[/b][/color]
+
+[color=purple][b]B.1) Attachez votre ceinture, on décolle[/b][/color]
+
+[url=https://zupimages.net/viewer.php?id=25/39/izn8.jpg][img]https://zupimages.net/up/25/39/izn8.jpg[/img][/url]
+
+[b][ChatGPT][/b] : Entrainez-vous pour à partir d'ici pour obtenir de bons résultats.
+[b][Coussini][/b] : Vous pouvez ainsi, redémarrer le scénario "[b]XR2 va partir pour la lune[/b]" en double-cliquant sur ce dernier.
+[b][Coussini][/b] : Il est préférable de quitter complètement Orbiter 2024 avant de redémarrer une simulation.
+[b][Coussini][/b] : Remarquez les encadrés et flèches rouges (zones).
+[b][Coussini][/b] : Nous avons en haut à droite l'indication concernant une [b]pause[/b].
+[b][Coussini][/b] : Pour alterner entre une pause et une simulation, appuyez sur [b]CTRL-P[/b].
+[b][Coussini][/b] : Il est très bénéfique de faire une pause lors du suivi d'un tutoriel.
+[b][Coussini][/b] : Il est important de mémoriser ces zones car le départ s'enchaîne rapidement.
+
+[b][u]À MÉMORISER[/u][/b]
+[b]*[/b] En haut et à droite de l'écran, la variable [b]Sim[/b] représente la vitesse de simulation.
+[b]*[/b] Pour accélérer ou augmenter la simulation, appuyez sur la touche [b]T[/b] du clavier.
+[b]*[/b] Pour décélérer ou diminuer la simulation, appuyez sur la touche [b]R[/b] du clavier.
+
+[b][color=red]Préparatif avant le Phase 1:[/color][/b]
+[b]01 -[/b] Regardez la valeur du champ [b]TLn[/b] du [b]LunarTransferMFD[/b] à gauche.
+[b]02 -[/b] Pour décoller favorablement, cette valeur doit être à [b]300[/b] (ce chiffre s'exprime en seconde).
+[b]03 -[/b] Augmentez la simulation, et ce avec précaution, afin d'avoir la valeur [b]500[/b].
+[b]04 -[/b] Diminuez la simulation afin que la variable [b]Sim[/b] s'affiche à vitesse réelle.
+[b]05 -[/b] [b]P.S.:[/b] Une simulation à 10X, 100X… ou 0.1X n'est pas la vitesse réelle.
+[b]06 -[/b] Affichez le panneau "[b]haut[/b]" du [b]XR2 Ravenstar[/b].
+[b]07 -[/b] Appuyez sur le bouton [b]APU rouge[/b] pour activer l'APU.
+[b]08 -[/b] Attendez que le bouton [b]APU rouge[/b] cesse de clignoter.
+[b]09 -[/b] Appuyez sur le bouton [b]CABIN HATCH[/b] pour le fermer.
+[b]10 -[/b] Affichez le panneau "[b]bas[/b]" du [b]XR2 Ravenstar[/b].
+[b]11 -[/b] Appuyez sur le bouton [b]EXTERNAL COOLING[/b] pour le fermer.
+[b]12 -[/b] Affichez le panneau "[b]principal[/b]" du [b]XR2 Ravenstar[/b].
+
+[b][color=red]ENCHAÎNEMENT DES ACTIONS À MÉMORISER (pour chacune des phases)[/color][/b]
+[b][color=red]Phase 1 (cap 90) :[/color][/b]
+[b]01 -[/b] Appuyez sur le bouton [b]GO[/b] à droite, lorsque [b]TLn[/b] atteint [b]300[/b].
+[b]02 -[/b] [b][u]Cliquez immédiatement[/u][/b] avec la [b]touche droite de la souris[/b] sur la zone [b]AF CTRL[/b] afin qu'il soit à [b]ON[/b].
+[b]03 -[/b] Relaxez car [b]Universal autopilot control[/b] travaille pour vous.
+
+[b][color=red]Phase 2 (PITCH 45 degré):[/color][/b]
+[b]01 -[/b] Lorsque vous entendez un [b]bruit strident[/b], cliquez en haut de la [b]zone rouge  MAIN[/b].
+[b]02 -[/b] Cliquez sur le bouton [b]ATTITUDE HOLD[/b].
+[b]03 -[/b] Relaxez car [b]ATTITUDE HOLD AUTOPILOT[/b] travaille pour vous.
+
+[color=purple][b]B.2) Phase d'ascension[/b][/color]
+
+[url=https://zupimages.net/viewer.php?id=25/39/1ugs.jpg][img]https://zupimages.net/up/25/39/1ugs.jpg[/img][/url]
+
+[b][Coussini][/b] : Remarquez les encadrés et flèches rouges (zones).
+[b][Coussini][/b] : Nous avons en haut la valeur [b]15.01k[/b], qui correspond à 15 kilomètres et quelques poussières.
+[b][Coussini][/b] : Faite une pause à l'aide de la touche [b]CTRL-P[/b] pour vous aider à suivre ce tutoriel.
+[b][Coussini][/b] : Dans les prochaine phases, nous devons utilisez le pavé numérique afin d'effectuer des ajustements.
+[b][Coussini][/b] : Cela simplifie grandement le pilotage.
+[b][Coussini][/b] : Nous aurons à l'étape suivante, la tâche d'ajuster le [b]PITCH[/b] et le [b]EIn[/b] (selon le [b]BANK[/b]).
+
+[b][u]Changement de PITCH[/u][/b]
+[b]*[/b] La valeur du [b]PITCH[/b] est affiché dans le [b]ATTITUDE HOLD AUTOPILOT[/b]
+[b]*[/b] Pour effectuer des ajustements à tout les [b]5 degrés[/b], utilisez la touche [b]8 ou 2 du pavé numérique[/b].
+[b]*[/b] Pour effectuer des ajustements à tout les [b]0.5 degré[/b], utilisez [b]la souris[/b] sur les triangles bleus tel qu'illustré.
+
+[b][u]Changement du EIn (selon le BANK)[/u][/b]
+[b]*[/b] La valeur du [b]EIn[/b] est affiché dans le [b]LunarTransferMFD[/b]
+[b]*[/b] La valeur du [b]BANK[/b] est affiché dans le [b]ATTITUDE HOLD AUTOPILOT[/b]
+[b]*[/b] Pour effectuer des ajustements sur ces deux variables, utilisez la touche [b]4 ou 6 du pavé numérique[/b].
+[b]*[/b] Observez bien la valeur du [b]EIn[/b] qui va diminuer au augmenter.
+[b]*[/b] La valeur idéale du [b]EIn[/b] devrait être de [b]+/-0.00[/b].
+[b]*[/b] Lorsque la valeur du [b]EIn[/b] s'approche de [b]+/-0.00[/b], ajustez la valeur de [b]BANK[/b] à 0
+
+[b][u]Allumage du SCRAM[/u][/b]
+[b]*[/b] Lorsque que je vous le direz, dans la [b][color=red]Phase 4[/color][/b], appuyez sur le bouton [b]SCRAM DOORS[/b] avant d'utiliser les propulseurs SCRAM.
+[b]*[/b] Lorsque vous n'entendrez plus le bruit d'ouverture des [b]SCRAM DOORS[/b], cliquez en haut de la [b]zone rouge SCRAM[/b].
+[color=purple][b]*[/b] Prenez garde à [b]ne pas dépasser[/b] la [b]température SCRAM[/b] tel qu'indiqué sur l'image précédente.[/color]
+
+[b][color=red]Phase 3: (PITCH 7) à partir de 15.00k:[/color][/b]
+[b]01 -[/b] [u]Cliquez lentement[/u] sur la touche [b]8 du pavé numérique[/b] jusqu'à ce que le [b]PITCH[/b] soit à [b]7.5[/b].
+[b]02 -[/b] Utilisez la souris sur les [b]triangles bleus à droite[/b], et ajustez la valeur du [b]PITCH[/b] à [b]7.0[/b].
+[b]03 -[/b] Relaxez car [b]ATTITUDE HOLD AUTOPILOT[/b] travaille toujours pour vous.
+
+[b][color=red]Phase 4: (le PITCH 7) à 24.00k:[/color][/b]
+[b]01 -[/b] Lorsque vous entendez [b]MACH 3[/b], allumez le propulseur [b]SCRAM[/b] tel que je vous l'ai indiqué plus tôt.
+
+[b][color=red]Phase 5: (le PITCH 5) à partir de 30.00k:[/color][/b]
+[b]01 -[/b] Utilisez la souris sur les [b]triangles bleus à droite[/b], et ajustez la valeur du [b]PITCH[/b] à [b]5.0[/b].
+[b]02 -[/b] Diminuer le [b]EIn[/b] avec la touche [b]4 ou 6 du pavé numérique[/b].
+
+[b][color=red]Phase 6: (le PITCH 4) à partir de 40.00k:[/color][/b]
+[b]01 -[/b] Utilisez la souris sur les [b]triangles bleus à droite[/b], et ajustez la valeur du [b]PITCH[/b] à [b]4.0[/b].
+[b]02 -[/b] Diminuer le [b]EIn[/b] avec la touche [b]4 ou 6 du pavé numérique[/b].
+
+[b][color=red]Phase 7: (le PITCH 3) à partir de 50.00k:[/color][/b]
+[b]01 -[/b] Utilisez la souris sur les [b]triangles bleus à droite[/b], et ajustez la valeurdu [b]PITCH[/b] à [b]3.0[/b].
+[b]02 -[/b] Diminuer le [b]EIn[/b] avec la touche [b]4 ou 6 du pavé numérique[/b].
+
+[b][color=red]Phase 8: (la température SCRAM) est en jaune:[/color][/b]
+[b]01 -[/b] Appuyez sur le bouton [b]SCRAM DOORS[/b] avant d'utiliser les propulseurs SCRAM.
+
+[color=purple][b]B.3) Phase finale[/b][/color]
