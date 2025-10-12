@@ -1,124 +1,124 @@
-[center][color=green][b]Tutoriel avec Orbiter 2024, de la Terre à la Lune, avec Coussini et le XR2 Ravinstar (TOME 2)[/b][/color]
-[/center]
-[color=green][b]A) Configuration de l'écran pour ce départ[/b][/color]
+Tutoriel avec Orbiter 2024, de la Terre à la Lune, avec Coussini et le XR2 Ravinstar (TOME 2)
 
-[b]01 -[/b] Sélectionnez le bouton [b]Scenarios (à gauche)[/b].
-[b]02 -[/b] Dans la liste des scénarios, cliquez sur le dossier [b]XR2 Ravenstar[/b].
-[b]03 -[/b] Cliquez sur [b]Pret pour un decollage pour la lune[/b].
-[b]04 -[/b] Cliquez sur le bouton [b]Launch Orbiter (en bas à gauche)[/b].
+A) Configuration de l'écran pour ce départ
+
+01 - Sélectionnez le bouton Scenarios (à gauche).
+02 - Dans la liste des scénarios, cliquez sur le dossier XR2 Ravenstar.
+03 - Cliquez sur Pret pour un decollage pour la lune.
+04 - Cliquez sur le bouton Launch Orbiter (en bas à gauche).
 
 [url=https://zupimages.net/viewer.php?id=25/39/ntot.jpg][img]https://zupimages.net/up/25/39/ntot.jpg[/img][/url]
 
-[color=purple][b]Voici la fenêtre que vous venez d'ouvrir.[/b][/color]
+Voici la fenêtre que vous venez d'ouvrir.
 
 [url=https://zupimages.net/viewer.php?id=25/39/0uk4.jpg][img]https://zupimages.net/up/25/39/0uk4.jpg[/img][/url]
 
-[b][Pilote][/b] : Vous êtes pas sérieux ! Je vais me casser la marboulette !
-[b][Pilote][/b] : Un décollage en soirée !
-[b][Pilote][/b] : Jarnigoine ! Il est fou ce Québécois !
-[b][ChatGPT][/b] : Ouille !
-[b][Coussini][/b] : Pas de panique !
-[b][Coussini][/b] : Prenez ce [b]café Capuccino[/b] avec ces [b]anneaux de Jupiter en garniture[/b].
-[b][Coussini][/b] : Suivez les étapes pendant que vous buvez ce nectar galactique.
+[Pilote] : Vous êtes pas sérieux ! Je vais me casser la marboulette !
+[Pilote] : Un décollage en soirée !
+[Pilote] : Jarnigoine ! Il est fou ce Québécois !
+[ChatGPT] : Ouille !
+[Coussini] : Pas de panique !
+[Coussini] : Prenez ce café Capuccino avec ces anneaux de Jupiter en garniture.
+[Coussini] : Suivez les étapes pendant que vous buvez ce nectar galactique.
 
-[b]05 -[/b] Déplacez votre souris au centre, et en haut de l'écran.
-[b]06 -[/b] Un menu contextuel apparaît.
-[b]07 -[/b] Cliquez avec le bouton droit de votre souris sur ce menu contextuel.
-[b]08 -[/b] Dans l'option [b]Menu bar[/b], choisissez [b]Show[/b].
-[b]09 -[/b] Appuyez sur le bouton [b]Close[/b] afin de fermer cette fenêtre.
+05 - Déplacez votre souris au centre, et en haut de l'écran.
+06 - Un menu contextuel apparaît.
+07 - Cliquez avec le bouton droit de votre souris sur ce menu contextuel.
+08 - Dans l'option Menu bar, choisissez Show.
+09 - Appuyez sur le bouton Close afin de fermer cette fenêtre.
 
-[color=green][b]B) Configuration du tableau de bord[/b][/color]
+B) Configuration du tableau de bord
 
-[color=purple][b]B.1) Nous allons configurer ce qui a trait à l'[u]encadré rouge à gauche[/u]
-[/b][/color]
+B.1) Nous allons configurer ce qui a trait à l'encadré rouge à gauche
+
 [url=https://zupimages.net/viewer.php?id=25/39/y0ft.jpg][img]https://zupimages.net/up/25/39/y0ft.jpg[/img][/url]
 
-[b]01 -[/b] cliquez sur le bouton [b]SEL[/b], et ce, autant de fois, afin de voir dans ce menu [b].LunarTransferMFD[/b]
-[b]02 -[/b] cliquez sur le bouton [b]LUN[/b] afin de sélectionner ce MFD.
+01 - cliquez sur le bouton SEL, et ce, autant de fois, afin de voir dans ce menu .LunarTransferMFD
+02 - cliquez sur le bouton LUN afin de sélectionner ce MFD.
 
-[b]À MÉMORISER[/b]
-[b]*[/b] Utilisez les boutons [b]PRV[/b] et [b]NXT[/b] afin de mettre en surbrillance un champ.
-[b]*[/b] utilisez les boutons [b]+[/b] et [b]-[/b] afin de changer la valeur du champ.
+À MÉMORISER
+* Utilisez les boutons PRV et NXT afin de mettre en surbrillance un champ.
+* utilisez les boutons + et - afin de changer la valeur du champ.
 
-[b]03 -[/b] Modifiez les champs [b]Mod[/b] et [b]Tgt[/b] tel que figuré sur l'encadré rouge à gauche.
+03 - Modifiez les champs Mod et Tgt tel que figuré sur l'encadré rouge à gauche.
 
-[b][Coussini][/b] : Nous avons notre premier MFD de configuré. C'est le MFD [b]LunarTransferMFD[/b].
+[Coussini] : Nous avons notre premier MFD de configuré. C'est le MFD LunarTransferMFD.
 
-[color=purple][b]B.2) Nous allons configurer ce qui a trait à l'[u]encadré rouge au centre[/u]
-[/b][/color]
+B.2) Nous allons configurer ce qui a trait à l'encadré rouge au centre
+
 [url=https://zupimages.net/viewer.php?id=25/39/y0ft.jpg][img]https://zupimages.net/up/25/39/y0ft.jpg[/img][/url]
 
-[b]01 -[/b] cliquez sur la [b]touche 2[/b] de votre clavier ([b]pas celui du pavé numérique[/b]) afin de voir [b]ATTITUDE HOLD AUTOPILOT[/b].
+01 - cliquez sur la touche 2 de votre clavier (pas celui du pavé numérique) afin de voir ATTITUDE HOLD AUTOPILOT.
 
-[b]À MÉMORISER[/b]
-[b]*[/b] Utilisez les boutons [b]triangle bleu[/b], afin d'ajuster les valeurs de [b]PITCH[/b] et de [b]BANK[/b].
-[b]*[/b] Les boutons [b]triangle bleu de droite[/b], afin d'incrémenter ou décrémenter en fraction de [b]0.5[/b].
-[b]*[/b] Familiarisez-vous avec ces boutons, pour voir les valeurs de [b]PITCH[/b] et de [b]BANK[/b] changer.
-[b]*[/b] Cliquez sur la [b]case à gauche de ZERO BOTH[/b] pour remettre ces valeurs à zéro.
+À MÉMORISER
+* Utilisez les boutons triangle bleu, afin d'ajuster les valeurs de PITCH et de BANK.
+* Les boutons triangle bleu de droite, afin d'incrémenter ou décrémenter en fraction de 0.5.
+* Familiarisez-vous avec ces boutons, pour voir les valeurs de PITCH et de BANK changer.
+* Cliquez sur la case à gauche de ZERO BOTH pour remettre ces valeurs à zéro.
 
-[b]02 -[/b] Ajuster la valeur de [b]PITCH[/b] pour qu'elle soit à [b]+45.0[/b].
+02 - Ajuster la valeur de PITCH pour qu'elle soit à +45.0.
 
-[b][Coussini][/b] : Nous avons notre deuxième MFD de configuré. C'est l'autopilote [b]ATTITUDE HOLD AUTOPILOT[/b].
+[Coussini] : Nous avons notre deuxième MFD de configuré. C'est l'autopilote ATTITUDE HOLD AUTOPILOT.
 
-[color=purple][b]B.3) Nous allons configurer ce qui a trait à l'[u]encadré rouge à droite[/u]
-[/b][/color]
+B.3) Nous allons configurer ce qui a trait à l'encadré rouge à droite
+
 [url=https://zupimages.net/viewer.php?id=25/39/y0ft.jpg][img]https://zupimages.net/up/25/39/y0ft.jpg[/img][/url]
 
-[b]01 -[/b] cliquez sur le bouton [b]SEL[/b], et ce, autant de fois, afin de voir dans ce menu [b]UAP MFD[/b].
-[b]02 -[/b] cliquez sur le bouton [b]UAP[/b] afin de sélectionner ce MFD.
+01 - cliquez sur le bouton SEL, et ce, autant de fois, afin de voir dans ce menu UAP MFD.
+02 - cliquez sur le bouton UAP afin de sélectionner ce MFD.
 
-[b]À MÉMORISER[/b]
-[b]*[/b] Utilisez les boutons [b]>[/b] et [b]<[/b] ([b][color=blue]encadrés en bleu[/color][/b]), afin de mettre en surbrillance un champ ou une option.
-[b]*[/b] utilisez le bouton [b]ENT[/b] afin de valider un choix d'option.
-[b]*[/b] utilisez le bouton [b]PG[/b] "Page" afin de changer de page.
-[b]*[/b] grâce au bouton [b]PG[/b], vous verrez défiler les pages [b]Status[/b], [b]Input[/b] et [b]Sequence[/b].
-[b]*[/b] grâce au bouton [b]GO[/b], vous démarrez cet auto-pilote.
+À MÉMORISER
+* Utilisez les boutons > et < ([color=blue]encadrés en bleu), afin de mettre en surbrillance un champ ou une option.
+* utilisez le bouton ENT afin de valider un choix d'option.
+* utilisez le bouton PG "Page" afin de changer de page.
+* grâce au bouton PG, vous verrez défiler les pages Status, Input et Sequence.
+* grâce au bouton GO, vous démarrez cet auto-pilote.
 
-[b]Saisie du champ thrust[/b]
-[b]03 -[/b] Affichez la page [b]Sequence[/b] avec le bouton [b]PG[/b].
-[b]04 -[/b] Appuyez sur la touche [b]INS[/b] pour ajouter une nouvelle séquence.
-[b]05 -[/b] Utilisez les boutons [b]>[/b] ou [b]<[/b] afin de mettre en surbrillance [b]runway_off[/b].
-[b]06 -[/b] Appuyez sur la touche [b]ENT[/b] pour accepter cette nouvelle séquence.
-[b]07 -[/b] Affichez la page [b]Input[/b] avec le bouton [b]PG[/b].
-[b]08 -[/b] Utilisez les boutons [b]>[/b] ou [b]<[/b] afin de mettre en surbrillance le champ [b]thrust[/b].
-[b]09 -[/b] Appuyez sur la touche [b]ENT[/b] afin de faire apparaitre une fenêtre de saisie.
-[b]10 -[/b] Déplacez votre souris afin que son curseur soit sur cette fenêtre de saisie.
-[b]11 -[/b] [u]Ne touchez plus à votre souris[/u].
-[b]12 -[/b] Tapez la valeur [b]0.18[/b] et appuyez sur la touche [b]ENTER[/b] de votre clavier.
+Saisie du champ thrust
+03 - Affichez la page Sequence avec le bouton PG.
+04 - Appuyez sur la touche INS pour ajouter une nouvelle séquence.
+05 - Utilisez les boutons > ou < afin de mettre en surbrillance runway_off.
+06 - Appuyez sur la touche ENT pour accepter cette nouvelle séquence.
+07 - Affichez la page Input avec le bouton PG.
+08 - Utilisez les boutons > ou < afin de mettre en surbrillance le champ thrust.
+09 - Appuyez sur la touche ENT afin de faire apparaitre une fenêtre de saisie.
+10 - Déplacez votre souris afin que son curseur soit sur cette fenêtre de saisie.
+11 - Ne touchez plus à votre souris.
+12 - Tapez la valeur 0.18 et appuyez sur la touche ENTER de votre clavier.
 
-[b]Saisie du champ gear_key[/b]
-[b]13 -[/b] Utilisez les boutons [b]>[/b] ou [b]<[/b] afin de mettre en surbrillance le champ [b]gear_key[/b].
-[b]14 -[/b] Appuyez sur la touche [b]ENT[/b] afin de faire apparaitre une fenêtre de saisie.
-[b]15 -[/b] Déplacez votre souris afin que son curseur soit sur cette fenêtre de saisie.
-[b]16 -[/b] [u]Ne touchez plus à votre souris[/u].
-[b]17 -[/b] Tapez la valeur [b]g[/b] et appuyez sur la touche [b]ENTER[/b] de votre clavier.
+Saisie du champ gear_key
+13 - Utilisez les boutons > ou < afin de mettre en surbrillance le champ gear_key.
+14 - Appuyez sur la touche ENT afin de faire apparaitre une fenêtre de saisie.
+15 - Déplacez votre souris afin que son curseur soit sur cette fenêtre de saisie.
+16 - Ne touchez plus à votre souris.
+17 - Tapez la valeur g et appuyez sur la touche ENTER de votre clavier.
 
-[b]Saisie du champ type[/b]
-[b]18 -[/b] Affichez la page [b]Sequence[/b] avec le bouton [b]PG[/b].
-[b]19 -[/b] Appuyez sur la touche [b]INS[/b] pour ajouter une nouvelle séquence.
-[b]20 -[/b] Utilisez les boutons [b]>[/b] ou [b]<[/b] afin de mettre en surbrillance [b]tools[/b].
-[b]21 -[/b] Appuyez sur la touche [b]ENT[/b] pour accepter cette nouvelle séquence.
-[b]22 -[/b] Affichez la page [b]Input[/b] avec le bouton [b]PG[/b].
-[b]23 -[/b] Utilisez les boutons [b]>[/b] ou [b]<[/b] afin de mettre en surbrillance le champ [b]type[/b].
-[b]24 -[/b] Appuyez sur la touche [b]ENT[/b] afin de faire apparaitre une fenêtre de saisie.
-[b]25 -[/b] Déplacez votre souris afin que son curseur soit sur cette fenêtre de saisie.
-[b]26 -[/b] [u]Ne touchez plus à votre souris[/u].
-[b]27 -[/b] Tapez la valeur [b]7[/b] et appuyez sur la touche [b]ENTER[/b] de votre clavier.
+Saisie du champ type
+18 - Affichez la page Sequence avec le bouton PG.
+19 - Appuyez sur la touche INS pour ajouter une nouvelle séquence.
+20 - Utilisez les boutons > ou < afin de mettre en surbrillance tools.
+21 - Appuyez sur la touche ENT pour accepter cette nouvelle séquence.
+22 - Affichez la page Input avec le bouton PG.
+23 - Utilisez les boutons > ou < afin de mettre en surbrillance le champ type.
+24 - Appuyez sur la touche ENT afin de faire apparaitre une fenêtre de saisie.
+25 - Déplacez votre souris afin que son curseur soit sur cette fenêtre de saisie.
+26 - Ne touchez plus à votre souris.
+27 - Tapez la valeur 7 et appuyez sur la touche ENTER de votre clavier.
 
-[b][Coussini][/b] : Nous avons notre troisième MFD de configuré. C'est l'autopilote [b]Universal autopilot control (UAP)[/b].
+[Coussini] : Nous avons notre troisième MFD de configuré. C'est l'autopilote Universal autopilot control (UAP).
 
-[b][Pilote][/b] : Je commence à avoir le tournis avec toutes ces manipulations !
-[b][Pilote][/b] : Si ça continue comme ça, nous allons décoller en plein jour !
-[b][ChatGpt][/b] : Pas bête, cela !
-[b][Coussini][/b] : ChatGPT, Couché… Tu dois m'obéir…
-[b][Coussini][/b] : Maintenant, assez travaillé, nous allons sauvegarder notre préparatif au décollage.
-[b][Coussini][/b] : Dans le menu contextuel, tout en haut de l'écran, cliquez sur [b]exit[/b].
-[b][Coussini][/b] : Vous verrez ainsi, le menu [b]Simulation scenarios[/b] d'Orbiter 2024.
-[b][Coussini][/b] : [b]N.B:[/b] Le scénario "(Current state)" est le scénario que vous venez d'élaborer.
-[b][Coussini][/b] : Cliquez sur le bouton Save current… (en bas de l'écran) afin de sauvegarder votre scénario.
-[b][Coussini][/b] : Dans le champ [b]Scenario name[/b] inscrivez "[b]XR2 va partir pour la lune[/b]".
-[b][Coussini][/b] : Cliquez sur le bouton [b]OK[/b] pour accepter ce nom.
-[b][Coussini][/b] : Ainsi, comme vous le constatez, votre scénario vient de s'inscrire dans la liste des scénarios courants.
-[b][Coussini][/b] : Ce scénario n'est pas inscrit dans le dossier [b]XR2 Ravenstar[/b], car vous avez utilisé la touche Save current…
-[b][Coussini][/b] : Pour ce bon travail, je vous offre un second café cappuccino.
-[b][Coussini][/b] : Profitez de ce merveilleux café et reposez-vous afin d'être prêt pour le grand départ pour la Lune.
+[Pilote] : Je commence à avoir le tournis avec toutes ces manipulations !
+[Pilote] : Si ça continue comme ça, nous allons décoller en plein jour !
+[ChatGpt] : Pas bête, cela !
+[Coussini] : ChatGPT, Couché… Tu dois m'obéir…
+[Coussini] : Maintenant, assez travaillé, nous allons sauvegarder notre préparatif au décollage.
+[Coussini] : Dans le menu contextuel, tout en haut de l'écran, cliquez sur exit.
+[Coussini] : Vous verrez ainsi, le menu Simulation scenarios d'Orbiter 2024.
+[Coussini] : N.B: Le scénario "(Current state)" est le scénario que vous venez d'élaborer.
+[Coussini] : Cliquez sur le bouton Save current… (en bas de l'écran) afin de sauvegarder votre scénario.
+[Coussini] : Dans le champ Scenario name inscrivez "XR2 va partir pour la lune".
+[Coussini] : Cliquez sur le bouton OK pour accepter ce nom.
+[Coussini] : Ainsi, comme vous le constatez, votre scénario vient de s'inscrire dans la liste des scénarios courants.
+[Coussini] : Ce scénario n'est pas inscrit dans le dossier XR2 Ravenstar, car vous avez utilisé la touche Save current…
+[Coussini] : Pour ce bon travail, je vous offre un second café cappuccino.
+[Coussini] : Profitez de ce merveilleux café et reposez-vous afin d'être prêt pour le grand départ pour la Lune.
