@@ -1,0 +1,37 @@
+MFD gauche
+basesync tgt port dao
+deo ANG 0.6, ANT 0.01, ALT 40.00km
+rejoindre le trait blanc et en retrograde
+MFD droite
+Aerobrake tgt port dao
+trait gris sur orange
+MFD surface flotant
+MFD COM/NAV pour port dao
+MFD map flottant tgt port dao
+
+AOA 40 degré
+
+mettre le descent à -35 m/s
+
+>70 km altitude X10
+<70 km altitude X1 (fermer les radiator)
+
+freinage entre 40 km et 10 km altitude
+reduction pitch    = reduction VS
+augmentation pitch = augmentation VS
+
+1-A 800 km objectif mettre le AOA à 45 (touche 2) ce qui me la chute apres la base (100 km marge)
+2-A 34 ALT mettre AOA 40 (touche 8) pour ajuster le point de chute a 200 avant la base
+3-A 27 ALT mettre AOA 45 (touche 2) pour ajuster le point de chute a 200 avant la base
+4-A 26 ALT ouvrir les hover et retro
+5-** 11 ALT baisser le nez rapidement, et remonter le AP sur surface
+6-Afficher le vor tol
+7-A 105 km baisser le nez AOA 5 degré
+8-A 100 km base, Activer le Descent Hold, et retro freinage + aerobrake 
+
+a TAS 200 éteindre et entrer le aerobrake
+*** sauvegarder et essayer auto landing 
+ajuster la trajectoire pour le PAD
+
+
+
